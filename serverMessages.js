@@ -7,6 +7,8 @@ var mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
 mongoose.connect(process.env.MONGODB_URI, function(err) {
   if (err) console.error("Could not connect to mongodb.");
+  console.log("CHAT $ on est connectés à la DB");
+  console.log("CHAT $ process.env", process.env);
 });
 
 // var WebSocketServer = require('ws').Server;
@@ -26,6 +28,12 @@ app.use(compression());
 // Parse le `body` des requêtes HTTP reçues
 var bodyParser = require("body-parser");
 app.use(bodyParser.json());
+
+app.get("/chat", function(req, res) {
+  res.json({
+    chat: "starting chat"
+  });
+});
 
 // --- Socket
 var server = require("http").createServer(app);
