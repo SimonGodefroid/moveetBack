@@ -36,7 +36,7 @@ app.get("/chat", function(req, res) {
 });
 
 // --- Socket
-var server = require("https").createServer(app);
+var server = require("http").createServer(app);
 var io = require("socket.io")(server);
 
 var Message = require("./models/Message");
