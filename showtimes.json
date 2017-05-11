@@ -1,0 +1,1838 @@
+[{
+  "place": {
+    "theater": {
+      "code": "C0153",
+      "distance": 1.586,
+      "name": "Cinéma Chaplin Denfert",
+      "address": "24, place Denfert-Rochereau",
+      "postalCode": "75014",
+      "city": "Paris 14e arrondissement",
+      "area": "Île-de-France",
+      "picture": {
+        "path": "\/pictures\/\/211\/108\/21110806_14494769.jpg",
+        "href": "http:\/\/images.allocine.fr\/pictures\/\/211\/108\/21110806_14494769.jpg"
+      },
+      "cinemaChain": {
+        "code": 81186,
+        "$": "CIP (Cinémas Indépendants Parisiens)"
+      },
+      "openToSales": 1,
+      "geoloc": {
+        "lat": 48.8338730,
+        "long": 2.3312430
+      },
+      "link": [{
+        "rel": "aco:web",
+        "href": "http:\/\/www.allocine.fr\/seance\/salle_gen_csalle=C0153.html"
+      }]
+    }
+  },
+  "movieShowtimes": [{
+    "preview": "false",
+    "releaseWeek": "false",
+    "onShow": {
+      "movie": {
+        "code": 223754,
+        "title": "The Lost City of Z",
+        "castingShort": {
+          "directors": "James Gray",
+          "actors": "Charlie Hunnam, Sienna Miller, Tom Holland, Robert Pattinson, Angus Macfadyen"
+        },
+        "release": {
+          "releaseDate": "2017-03-15"
+        },
+        "runtime": 8460,
+        "genre": [{
+          "code": 13001,
+          "$": "Aventure"
+        }],
+        "poster": {
+          "path": "\/pictures\/17\/02\/15\/10\/45\/490751.jpg",
+          "href": "http:\/\/images.allocine.fr\/pictures\/17\/02\/15\/10\/45\/490751.jpg"
+        },
+        "trailer": {
+          "code": 19567873,
+          "href": "http:\/\/www.allocine.fr\/blogvision\/19567873"
+        },
+        "trailerEmbed": "<div id='ACEmbed'><iframe src='http:\/\/www.allocine.fr\/_video\/iblogvision.aspx?cmedia=19567873&amp;isApp=true' style='width:480px; height:270px' frameborder='0' allowfullscreen='true'><\/iframe><br \/><a href=\"http:\/\/www.allocine.fr\/film\/fichefilm_gen_cfilm=223754.html\" target=\"_blank\">The Lost City of Z<\/a><\/div>",
+        "link": [{
+          "rel": "aco:web",
+          "name": "The Lost City of Z",
+          "href": "http:\/\/www.allocine.fr\/film\/fichefilm_gen_cfilm=223754.html"
+        }],
+        "statistics": {
+          "pressRating": 4.454545,
+          "pressReviewCount": 33,
+          "userRating": 3.836648,
+          "userReviewCount": 217,
+          "userRatingCount": 1972,
+          "editorialRatingCount": 0
+        }
+      }
+    },
+    "version": {
+      "original": "true",
+      "code": 6002,
+      "lang": 6002,
+      "$": "Anglais"
+    },
+    "screenFormat": {
+      "code": 110002,
+      "$": "Numérique"
+    },
+    "display": "Séances du mercredi 10 mai 2017 : 18:30 (film à 18:40)\u000d\u000aSéances du lundi 15 mai 2017 : 13:15 (film à 13:25)",
+    "scr": [{
+      "d": "2017-05-10",
+      "t": [{
+        "code": 422616933,
+        "p": 10,
+        "tk": "https:\/\/tickets.allocine.fr\/chaplin-portail\/denfert\/reserver\/F67231\/D1494433800\/VO",
+        "$": "18:30"
+      }]
+    }, {
+      "d": "2017-05-15",
+      "t": [{
+        "code": 422616934,
+        "p": 10,
+        "tk": "https:\/\/tickets.allocine.fr\/chaplin-portail\/denfert\/reserver\/F67231\/D1494846900\/VO",
+        "$": "13:15"
+      }]
+    }]
+  }]
+}, {
+  "place": {
+    "theater": {
+      "code": "C0042",
+      "distance": 2.094,
+      "name": "Epée de Bois",
+      "address": "100, rue Mouffetard",
+      "postalCode": "75005",
+      "city": "Paris 5e arrondissement",
+      "area": "Île-de-France",
+      "picture": {
+        "path": "\/pictures\/213\/962\/21396238_230829838.jpg",
+        "href": "http:\/\/images.allocine.fr\/pictures\/213\/962\/21396238_230829838.jpg"
+      },
+      "subway": "Censier-Daubenton.",
+      "cinemaChain": {
+        "code": 81007,
+        "$": "Indépendant"
+      },
+      "geoloc": {
+        "lat": 48.8412780,
+        "long": 2.3495510
+      },
+      "link": [{
+        "rel": "aco:web",
+        "href": "http:\/\/www.allocine.fr\/seance\/salle_gen_csalle=C0042.html"
+      }]
+    }
+  },
+  "movieShowtimes": [{
+    "preview": "false",
+    "releaseWeek": "false",
+    "onShow": {
+      "movie": {
+        "code": 223754,
+        "title": "The Lost City of Z",
+        "castingShort": {
+          "directors": "James Gray",
+          "actors": "Charlie Hunnam, Sienna Miller, Tom Holland, Robert Pattinson, Angus Macfadyen"
+        },
+        "release": {
+          "releaseDate": "2017-03-15"
+        },
+        "runtime": 8460,
+        "genre": [{
+          "code": 13001,
+          "$": "Aventure"
+        }],
+        "poster": {
+          "path": "\/pictures\/17\/02\/15\/10\/45\/490751.jpg",
+          "href": "http:\/\/images.allocine.fr\/pictures\/17\/02\/15\/10\/45\/490751.jpg"
+        },
+        "trailer": {
+          "code": 19567873,
+          "href": "http:\/\/www.allocine.fr\/blogvision\/19567873"
+        },
+        "trailerEmbed": "<div id='ACEmbed'><iframe src='http:\/\/www.allocine.fr\/_video\/iblogvision.aspx?cmedia=19567873&amp;isApp=true' style='width:480px; height:270px' frameborder='0' allowfullscreen='true'><\/iframe><br \/><a href=\"http:\/\/www.allocine.fr\/film\/fichefilm_gen_cfilm=223754.html\" target=\"_blank\">The Lost City of Z<\/a><\/div>",
+        "link": [{
+          "rel": "aco:web",
+          "name": "The Lost City of Z",
+          "href": "http:\/\/www.allocine.fr\/film\/fichefilm_gen_cfilm=223754.html"
+        }],
+        "statistics": {
+          "pressRating": 4.454545,
+          "pressReviewCount": 33,
+          "userRating": 3.836648,
+          "userReviewCount": 217,
+          "userRatingCount": 1972,
+          "editorialRatingCount": 0
+        }
+      }
+    },
+    "version": {
+      "original": "true",
+      "code": 6002,
+      "lang": 6002,
+      "$": "Anglais"
+    },
+    "screenFormat": {
+      "code": 110002,
+      "$": "Numérique"
+    },
+    "display": "Séances du mercredi 10 mai 2017 : 20:30 (film à 20:35)\u000d\u000aSéances du jeudi 11 mai 2017 : 20:30 (film à 20:35)\u000d\u000aSéances du vendredi 12 mai 2017 : 20:30 (film à 20:35)\u000d\u000aSéances du samedi 13 mai 2017 : 20:30 (film à 20:35)\u000d\u000aSéances du lundi 15 mai 2017 : 20:30 (film à 20:35)\u000d\u000aSéances du mardi 16 mai 2017 : 20:30 (film à 20:35)",
+    "scr": [{
+      "d": "2017-05-10",
+      "t": [{
+        "code": 420443277,
+        "p": 5,
+        "$": "20:30"
+      }]
+    }, {
+      "d": "2017-05-11",
+      "t": [{
+        "code": 420443279,
+        "p": 5,
+        "$": "20:30"
+      }]
+    }, {
+      "d": "2017-05-12",
+      "t": [{
+        "code": 420443283,
+        "p": 5,
+        "$": "20:30"
+      }]
+    }, {
+      "d": "2017-05-13",
+      "t": [{
+        "code": 420443285,
+        "p": 5,
+        "$": "20:30"
+      }]
+    }, {
+      "d": "2017-05-15",
+      "t": [{
+        "code": 420443287,
+        "p": 5,
+        "$": "20:30"
+      }]
+    }, {
+      "d": "2017-05-16",
+      "t": [{
+        "code": 420443290,
+        "p": 5,
+        "$": "20:30"
+      }]
+    }]
+  }]
+}, {
+  "place": {
+    "theater": {
+      "code": "C0099",
+      "distance": 2.465,
+      "name": "MK2 Parnasse",
+      "address": "11, rue Jules Chaplain",
+      "postalCode": "75006",
+      "city": "Paris 6e arrondissement",
+      "area": "Île-de-France",
+      "picture": {
+        "path": "\/medias\/nmedia\/18\/72\/94\/94\/19184360.jpg",
+        "href": "http:\/\/images.allocine.fr\/medias\/nmedia\/18\/72\/94\/94\/19184360.jpg"
+      },
+      "cinemaChain": {
+        "code": 81004,
+        "$": "MK2"
+      },
+      "openToExternalSales": 1,
+      "geoloc": {
+        "lat": 48.8428200,
+        "long": 2.3305570
+      },
+      "link": [{
+        "rel": "aco:web",
+        "href": "http:\/\/www.allocine.fr\/seance\/salle_gen_csalle=C0099.html"
+      }]
+    }
+  },
+  "movieShowtimes": [{
+    "preview": "false",
+    "releaseWeek": "false",
+    "onShow": {
+      "movie": {
+        "code": 223754,
+        "title": "The Lost City of Z",
+        "castingShort": {
+          "directors": "James Gray",
+          "actors": "Charlie Hunnam, Sienna Miller, Tom Holland, Robert Pattinson, Angus Macfadyen"
+        },
+        "release": {
+          "releaseDate": "2017-03-15"
+        },
+        "runtime": 8460,
+        "genre": [{
+          "code": 13001,
+          "$": "Aventure"
+        }],
+        "poster": {
+          "path": "\/pictures\/17\/02\/15\/10\/45\/490751.jpg",
+          "href": "http:\/\/images.allocine.fr\/pictures\/17\/02\/15\/10\/45\/490751.jpg"
+        },
+        "trailer": {
+          "code": 19567873,
+          "href": "http:\/\/www.allocine.fr\/blogvision\/19567873"
+        },
+        "trailerEmbed": "<div id='ACEmbed'><iframe src='http:\/\/www.allocine.fr\/_video\/iblogvision.aspx?cmedia=19567873&amp;isApp=true' style='width:480px; height:270px' frameborder='0' allowfullscreen='true'><\/iframe><br \/><a href=\"http:\/\/www.allocine.fr\/film\/fichefilm_gen_cfilm=223754.html\" target=\"_blank\">The Lost City of Z<\/a><\/div>",
+        "link": [{
+          "rel": "aco:web",
+          "name": "The Lost City of Z",
+          "href": "http:\/\/www.allocine.fr\/film\/fichefilm_gen_cfilm=223754.html"
+        }],
+        "statistics": {
+          "pressRating": 4.454545,
+          "pressReviewCount": 33,
+          "userRating": 3.836648,
+          "userReviewCount": 217,
+          "userRatingCount": 1972,
+          "editorialRatingCount": 0
+        }
+      }
+    },
+    "version": {
+      "original": "true",
+      "code": 6002,
+      "lang": 6002,
+      "$": "Anglais"
+    },
+    "screenFormat": {
+      "code": 110002,
+      "$": "Numérique"
+    },
+    "display": "Séances du mercredi 10 mai 2017 : 16:00 (film à 16:20)\u000d\u000aSéances du jeudi 11 mai 2017 : 16:00 (film à 16:20)\u000d\u000aSéances du vendredi 12 mai 2017 : 16:00 (film à 16:20)\u000d\u000aSéances du samedi 13 mai 2017 : 16:00 (film à 16:20)\u000d\u000aSéances du dimanche 14 mai 2017 : 16:00 (film à 16:20)\u000d\u000aSéances du lundi 15 mai 2017 : 16:00 (film à 16:20)\u000d\u000aSéances du mardi 16 mai 2017 : 16:00 (film à 16:20)",
+    "scr": [{
+      "d": "2017-05-11",
+      "t": [{
+        "code": 422918415,
+        "p": 20,
+        "tk": "https:\/\/www.mk2.com\/reservation-directe?seance_sku=8356_2_11-05-171493995641_83561493995622259_M",
+        "$": "16:00"
+      }]
+    }, {
+      "d": "2017-05-12",
+      "t": [{
+        "code": 422918416,
+        "p": 20,
+        "tk": "https:\/\/www.mk2.com\/reservation-directe?seance_sku=8356_2_12-05-171493995654_83561493995622259_M",
+        "$": "16:00"
+      }]
+    }, {
+      "d": "2017-05-13",
+      "t": [{
+        "code": 422918417,
+        "p": 20,
+        "tk": "https:\/\/www.mk2.com\/reservation-directe?seance_sku=8356_2_13-05-171493995669_83561493995622259_M",
+        "$": "16:00"
+      }]
+    }, {
+      "d": "2017-05-14",
+      "t": [{
+        "code": 422918418,
+        "p": 20,
+        "tk": "https:\/\/www.mk2.com\/reservation-directe?seance_sku=8356_2_14-05-171493995684_83561493995622259_M",
+        "$": "16:00"
+      }]
+    }, {
+      "d": "2017-05-15",
+      "t": [{
+        "code": 422918419,
+        "p": 20,
+        "tk": "https:\/\/www.mk2.com\/reservation-directe?seance_sku=8356_2_15-05-171493995697_83561493995622259_M",
+        "$": "16:00"
+      }]
+    }, {
+      "d": "2017-05-16",
+      "t": [{
+        "code": 422918420,
+        "p": 20,
+        "tk": "https:\/\/www.mk2.com\/reservation-directe?seance_sku=8356_2_16-05-171493995710_83561493995622259_M",
+        "$": "16:00"
+      }]
+    }]
+  }]
+}, {
+  "place": {
+    "theater": {
+      "code": "C0072",
+      "distance": 2.816,
+      "name": "Le Grand Action",
+      "address": "5, rue des Ecoles",
+      "postalCode": "75005",
+      "city": "Paris 5e arrondissement",
+      "area": "Île-de-France",
+      "picture": {
+        "path": "\/pictures\/213\/216\/21321660_1845311.jpg",
+        "href": "http:\/\/images.allocine.fr\/pictures\/213\/216\/21321660_1845311.jpg"
+      },
+      "cinemaChain": {
+        "code": 81186,
+        "$": "CIP (Cinémas Indépendants Parisiens)"
+      },
+      "hasPRMAccess": 1,
+      "geoloc": {
+        "lat": 48.8475500,
+        "long": 2.3522670
+      },
+      "link": [{
+        "rel": "aco:web",
+        "href": "http:\/\/www.allocine.fr\/seance\/salle_gen_csalle=C0072.html"
+      }]
+    }
+  },
+  "movieShowtimes": [{
+    "preview": "false",
+    "releaseWeek": "false",
+    "onShow": {
+      "movie": {
+        "code": 223754,
+        "title": "The Lost City of Z",
+        "castingShort": {
+          "directors": "James Gray",
+          "actors": "Charlie Hunnam, Sienna Miller, Tom Holland, Robert Pattinson, Angus Macfadyen"
+        },
+        "release": {
+          "releaseDate": "2017-03-15"
+        },
+        "runtime": 8460,
+        "genre": [{
+          "code": 13001,
+          "$": "Aventure"
+        }],
+        "poster": {
+          "path": "\/pictures\/17\/02\/15\/10\/45\/490751.jpg",
+          "href": "http:\/\/images.allocine.fr\/pictures\/17\/02\/15\/10\/45\/490751.jpg"
+        },
+        "trailer": {
+          "code": 19567873,
+          "href": "http:\/\/www.allocine.fr\/blogvision\/19567873"
+        },
+        "trailerEmbed": "<div id='ACEmbed'><iframe src='http:\/\/www.allocine.fr\/_video\/iblogvision.aspx?cmedia=19567873&amp;isApp=true' style='width:480px; height:270px' frameborder='0' allowfullscreen='true'><\/iframe><br \/><a href=\"http:\/\/www.allocine.fr\/film\/fichefilm_gen_cfilm=223754.html\" target=\"_blank\">The Lost City of Z<\/a><\/div>",
+        "link": [{
+          "rel": "aco:web",
+          "name": "The Lost City of Z",
+          "href": "http:\/\/www.allocine.fr\/film\/fichefilm_gen_cfilm=223754.html"
+        }],
+        "statistics": {
+          "pressRating": 4.454545,
+          "pressReviewCount": 33,
+          "userRating": 3.836648,
+          "userReviewCount": 217,
+          "userRatingCount": 1972,
+          "editorialRatingCount": 0
+        }
+      }
+    },
+    "version": {
+      "original": "true",
+      "code": 6002,
+      "lang": 6002,
+      "$": "Anglais"
+    },
+    "screenFormat": {
+      "code": 110002,
+      "$": "Numérique"
+    },
+    "display": "Séances du mercredi 10 mai 2017 : 19:00 (film à 19:15)\u000d\u000aSéances du vendredi 12 mai 2017 : 17:00 (film à 17:15)\u000d\u000aSéances du samedi 13 mai 2017 : 19:00 (film à 19:15)\u000d\u000aSéances du dimanche 14 mai 2017 : 15:45 (film à 16:00), 21:00 (film à 21:15)",
+    "scr": [{
+      "d": "2017-05-10",
+      "t": [{
+        "code": 422874270,
+        "p": 15,
+        "$": "19:00"
+      }]
+    }, {
+      "d": "2017-05-12",
+      "t": [{
+        "code": 422874271,
+        "p": 15,
+        "$": "17:00"
+      }]
+    }, {
+      "d": "2017-05-13",
+      "t": [{
+        "code": 422874272,
+        "p": 15,
+        "$": "19:00"
+      }]
+    }, {
+      "d": "2017-05-14",
+      "t": [{
+        "code": 422874273,
+        "p": 15,
+        "$": "15:45"
+      }, {
+        "code": 422874274,
+        "p": 15,
+        "$": "21:00"
+      }]
+    }]
+  }]
+}, {
+  "place": {
+    "theater": {
+      "code": "C0100",
+      "distance": 3.417,
+      "name": "Saint-André des Arts ",
+      "address": "30, rue Saint-Andre-des-Arts \/ 12, rue Gît-le-Coeur",
+      "postalCode": "75006",
+      "city": "Paris 6e arrondissement",
+      "area": "Île-de-France",
+      "picture": {
+        "path": "\/pictures\/210\/681\/21068178_20131222124754087.jpg",
+        "href": "http:\/\/images.allocine.fr\/pictures\/210\/681\/21068178_20131222124754087.jpg"
+      },
+      "cinemaChain": {
+        "code": 81007,
+        "$": "Indépendant"
+      },
+      "hasPRMAccess": 1,
+      "geoloc": {
+        "lat": 48.8533860,
+        "long": 2.3421430
+      },
+      "link": [{
+        "rel": "aco:web",
+        "href": "http:\/\/www.allocine.fr\/seance\/salle_gen_csalle=C0100.html"
+      }]
+    }
+  },
+  "movieShowtimes": [{
+    "preview": "false",
+    "releaseWeek": "false",
+    "onShow": {
+      "movie": {
+        "code": 223754,
+        "title": "The Lost City of Z",
+        "castingShort": {
+          "directors": "James Gray",
+          "actors": "Charlie Hunnam, Sienna Miller, Tom Holland, Robert Pattinson, Angus Macfadyen"
+        },
+        "release": {
+          "releaseDate": "2017-03-15"
+        },
+        "runtime": 8460,
+        "genre": [{
+          "code": 13001,
+          "$": "Aventure"
+        }],
+        "poster": {
+          "path": "\/pictures\/17\/02\/15\/10\/45\/490751.jpg",
+          "href": "http:\/\/images.allocine.fr\/pictures\/17\/02\/15\/10\/45\/490751.jpg"
+        },
+        "trailer": {
+          "code": 19567873,
+          "href": "http:\/\/www.allocine.fr\/blogvision\/19567873"
+        },
+        "trailerEmbed": "<div id='ACEmbed'><iframe src='http:\/\/www.allocine.fr\/_video\/iblogvision.aspx?cmedia=19567873&amp;isApp=true' style='width:480px; height:270px' frameborder='0' allowfullscreen='true'><\/iframe><br \/><a href=\"http:\/\/www.allocine.fr\/film\/fichefilm_gen_cfilm=223754.html\" target=\"_blank\">The Lost City of Z<\/a><\/div>",
+        "link": [{
+          "rel": "aco:web",
+          "name": "The Lost City of Z",
+          "href": "http:\/\/www.allocine.fr\/film\/fichefilm_gen_cfilm=223754.html"
+        }],
+        "statistics": {
+          "pressRating": 4.454545,
+          "pressReviewCount": 33,
+          "userRating": 3.836648,
+          "userReviewCount": 217,
+          "userRatingCount": 1972,
+          "editorialRatingCount": 0
+        }
+      }
+    },
+    "screen": {
+      "code": 8447,
+      "$": "1"
+    },
+    "version": {
+      "original": "true",
+      "code": 6002,
+      "lang": 6002,
+      "$": "Anglais"
+    },
+    "screenFormat": {
+      "code": 110002,
+      "$": "Numérique"
+    },
+    "seatCount": 172,
+    "display": "Séances du mercredi 10 mai 2017 : 20:55 (film à 21:00)\u000d\u000aSéances du jeudi 11 mai 2017 : 20:55 (film à 21:00)\u000d\u000aSéances du vendredi 12 mai 2017 : 20:55 (film à 21:00)\u000d\u000aSéances du samedi 13 mai 2017 : 20:55 (film à 21:00)\u000d\u000aSéances du dimanche 14 mai 2017 : 20:55 (film à 21:00)\u000d\u000aSéances du lundi 15 mai 2017 : 20:55 (film à 21:00)\u000d\u000aSéances du mardi 16 mai 2017 : 20:55 (film à 21:00)",
+    "scr": [{
+      "d": "2017-05-10",
+      "t": [{
+        "code": 420456005,
+        "p": 5,
+        "$": "20:55"
+      }]
+    }, {
+      "d": "2017-05-11",
+      "t": [{
+        "code": 420486301,
+        "p": 5,
+        "$": "20:55"
+      }]
+    }, {
+      "d": "2017-05-12",
+      "t": [{
+        "code": 420486302,
+        "p": 5,
+        "$": "20:55"
+      }]
+    }, {
+      "d": "2017-05-13",
+      "t": [{
+        "code": 420486303,
+        "p": 5,
+        "$": "20:55"
+      }]
+    }, {
+      "d": "2017-05-14",
+      "t": [{
+        "code": 420486304,
+        "p": 5,
+        "$": "20:55"
+      }]
+    }, {
+      "d": "2017-05-15",
+      "t": [{
+        "code": 420486305,
+        "p": 5,
+        "$": "20:55"
+      }]
+    }, {
+      "d": "2017-05-16",
+      "t": [{
+        "code": 420486306,
+        "p": 5,
+        "$": "20:55"
+      }]
+    }]
+  }]
+}, {
+  "place": {
+    "theater": {
+      "code": "C0013",
+      "distance": 4.045,
+      "name": "Luminor Hôtel de Ville",
+      "address": "20, rue du Temple",
+      "postalCode": "75004",
+      "city": "Paris 4e arrondissement",
+      "area": "Île-de-France",
+      "picture": {
+        "path": "\/pictures\/211\/525\/21152512_180127731.jpg",
+        "href": "http:\/\/images.allocine.fr\/pictures\/211\/525\/21152512_180127731.jpg"
+      },
+      "cinemaChain": {
+        "code": 81007,
+        "$": "Indépendant"
+      },
+      "openToSales": 1,
+      "geoloc": {
+        "lat": 48.8586150,
+        "long": 2.3535150
+      },
+      "link": [{
+        "rel": "aco:web",
+        "href": "http:\/\/www.allocine.fr\/seance\/salle_gen_csalle=C0013.html"
+      }]
+    }
+  },
+  "movieShowtimes": [{
+    "preview": "false",
+    "releaseWeek": "false",
+    "onShow": {
+      "movie": {
+        "code": 223754,
+        "title": "The Lost City of Z",
+        "castingShort": {
+          "directors": "James Gray",
+          "actors": "Charlie Hunnam, Sienna Miller, Tom Holland, Robert Pattinson, Angus Macfadyen"
+        },
+        "release": {
+          "releaseDate": "2017-03-15"
+        },
+        "runtime": 8460,
+        "genre": [{
+          "code": 13001,
+          "$": "Aventure"
+        }],
+        "poster": {
+          "path": "\/pictures\/17\/02\/15\/10\/45\/490751.jpg",
+          "href": "http:\/\/images.allocine.fr\/pictures\/17\/02\/15\/10\/45\/490751.jpg"
+        },
+        "trailer": {
+          "code": 19567873,
+          "href": "http:\/\/www.allocine.fr\/blogvision\/19567873"
+        },
+        "trailerEmbed": "<div id='ACEmbed'><iframe src='http:\/\/www.allocine.fr\/_video\/iblogvision.aspx?cmedia=19567873&amp;isApp=true' style='width:480px; height:270px' frameborder='0' allowfullscreen='true'><\/iframe><br \/><a href=\"http:\/\/www.allocine.fr\/film\/fichefilm_gen_cfilm=223754.html\" target=\"_blank\">The Lost City of Z<\/a><\/div>",
+        "link": [{
+          "rel": "aco:web",
+          "name": "The Lost City of Z",
+          "href": "http:\/\/www.allocine.fr\/film\/fichefilm_gen_cfilm=223754.html"
+        }],
+        "statistics": {
+          "pressRating": 4.454545,
+          "pressReviewCount": 33,
+          "userRating": 3.836648,
+          "userReviewCount": 217,
+          "userRatingCount": 1972,
+          "editorialRatingCount": 0
+        }
+      }
+    },
+    "version": {
+      "original": "true",
+      "code": 6002,
+      "lang": 6002,
+      "$": "Anglais"
+    },
+    "screenFormat": {
+      "code": 110002,
+      "$": "Numérique"
+    },
+    "display": "Séances du mercredi 10 mai 2017 : 13:40\u000d\u000aSéances du jeudi 11 mai 2017 : 16:10\u000d\u000aSéances du samedi 13 mai 2017 : 21:00\u000d\u000aSéances du lundi 15 mai 2017 : 15:10",
+    "scr": [{
+      "d": "2017-05-11",
+      "t": [{
+        "code": 422543127,
+        "p": 0,
+        "tk": "https:\/\/tickets.allocine.fr\/paris-luminor\/reserver\/F67231\/D1494511800\/VO",
+        "$": "16:10"
+      }]
+    }, {
+      "d": "2017-05-13",
+      "t": [{
+        "code": 422543128,
+        "p": 0,
+        "tk": "https:\/\/tickets.allocine.fr\/paris-luminor\/reserver\/F67231\/D1494702000\/VO",
+        "$": "21:00"
+      }]
+    }, {
+      "d": "2017-05-15",
+      "t": [{
+        "code": 422543129,
+        "p": 0,
+        "tk": "https:\/\/tickets.allocine.fr\/paris-luminor\/reserver\/F67231\/D1494853800\/VO",
+        "$": "15:10"
+      }]
+    }]
+  }]
+}, {
+  "place": {
+    "theater": {
+      "code": "W7515",
+      "distance": 4.070,
+      "name": "Cinéma Chaplin Saint Lambert",
+      "address": "6, rue Peclet",
+      "postalCode": "75015",
+      "city": "Paris 15e arrondissement",
+      "area": "Île-de-France",
+      "picture": {
+        "path": "\/pictures\/\/211\/108\/21110802_143911405.jpg",
+        "href": "http:\/\/images.allocine.fr\/pictures\/\/211\/108\/21110802_143911405.jpg"
+      },
+      "cinemaChain": {
+        "code": 81186,
+        "$": "CIP (Cinémas Indépendants Parisiens)"
+      },
+      "openToSales": 1,
+      "geoloc": {
+        "lat": 48.8431040,
+        "long": 2.2986270
+      },
+      "link": [{
+        "rel": "aco:web",
+        "href": "http:\/\/www.allocine.fr\/seance\/salle_gen_csalle=W7515.html"
+      }]
+    }
+  },
+  "movieShowtimes": [{
+    "preview": "false",
+    "releaseWeek": "false",
+    "onShow": {
+      "movie": {
+        "code": 223754,
+        "title": "The Lost City of Z",
+        "castingShort": {
+          "directors": "James Gray",
+          "actors": "Charlie Hunnam, Sienna Miller, Tom Holland, Robert Pattinson, Angus Macfadyen"
+        },
+        "release": {
+          "releaseDate": "2017-03-15"
+        },
+        "runtime": 8460,
+        "genre": [{
+          "code": 13001,
+          "$": "Aventure"
+        }],
+        "poster": {
+          "path": "\/pictures\/17\/02\/15\/10\/45\/490751.jpg",
+          "href": "http:\/\/images.allocine.fr\/pictures\/17\/02\/15\/10\/45\/490751.jpg"
+        },
+        "trailer": {
+          "code": 19567873,
+          "href": "http:\/\/www.allocine.fr\/blogvision\/19567873"
+        },
+        "trailerEmbed": "<div id='ACEmbed'><iframe src='http:\/\/www.allocine.fr\/_video\/iblogvision.aspx?cmedia=19567873&amp;isApp=true' style='width:480px; height:270px' frameborder='0' allowfullscreen='true'><\/iframe><br \/><a href=\"http:\/\/www.allocine.fr\/film\/fichefilm_gen_cfilm=223754.html\" target=\"_blank\">The Lost City of Z<\/a><\/div>",
+        "link": [{
+          "rel": "aco:web",
+          "name": "The Lost City of Z",
+          "href": "http:\/\/www.allocine.fr\/film\/fichefilm_gen_cfilm=223754.html"
+        }],
+        "statistics": {
+          "pressRating": 4.454545,
+          "pressReviewCount": 33,
+          "userRating": 3.836648,
+          "userReviewCount": 217,
+          "userRatingCount": 1972,
+          "editorialRatingCount": 0
+        }
+      }
+    },
+    "version": {
+      "original": "true",
+      "code": 6002,
+      "lang": 6002,
+      "$": "Anglais"
+    },
+    "screenFormat": {
+      "code": 110002,
+      "$": "Numérique"
+    },
+    "display": "Séances du mercredi 10 mai 2017 : 21:00 (film à 21:10)\u000d\u000aSéances du vendredi 12 mai 2017 : 21:00 (film à 21:10)\u000d\u000aSéances du mardi 16 mai 2017 : 18:20 (film à 18:30)",
+    "scr": [{
+      "d": "2017-05-10",
+      "t": [{
+        "code": 422613292,
+        "p": 10,
+        "tk": "https:\/\/tickets.allocine.fr\/chaplin-portail\/st-lambert\/reserver\/F67231\/D1494442800\/VO",
+        "$": "21:00"
+      }]
+    }, {
+      "d": "2017-05-12",
+      "t": [{
+        "code": 422613293,
+        "p": 10,
+        "tk": "https:\/\/tickets.allocine.fr\/chaplin-portail\/st-lambert\/reserver\/F67231\/D1494615600\/VO",
+        "$": "21:00"
+      }]
+    }, {
+      "d": "2017-05-16",
+      "t": [{
+        "code": 422613294,
+        "p": 10,
+        "tk": "https:\/\/tickets.allocine.fr\/chaplin-portail\/st-lambert\/reserver\/F67231\/D1494951600\/VO",
+        "$": "18:20"
+      }]
+    }]
+  }]
+}, {
+  "place": {
+    "theater": {
+      "code": "W7508",
+      "distance": 5.270,
+      "name": "MK2 Grand Palais",
+      "address": "A l'intérieur du Grand Palais: à l'angle du Cours de la Reine et de l'Avenue Winston-Churchill \/ Entrée par les marches de la Rotonde Alexandre 3, à côté du restaurant Mini Palais.",
+      "postalCode": "75008",
+      "city": "Paris 8e arrondissement",
+      "area": "Île-de-France",
+      "picture": {
+        "path": "\/medias\/nmedia\/18\/94\/44\/81\/20397941.jpg",
+        "href": "http:\/\/images.allocine.fr\/medias\/nmedia\/18\/94\/44\/81\/20397941.jpg"
+      },
+      "cinemaChain": {
+        "code": 81004,
+        "$": "MK2"
+      },
+      "hasPRMAccess": 1,
+      "openToExternalSales": 1,
+      "geoloc": {
+        "lat": 48.8651947,
+        "long": 2.3129225
+      },
+      "link": [{
+        "rel": "aco:web",
+        "href": "http:\/\/www.allocine.fr\/seance\/salle_gen_csalle=W7508.html"
+      }]
+    }
+  },
+  "movieShowtimes": [{
+    "preview": "false",
+    "releaseWeek": "false",
+    "onShow": {
+      "movie": {
+        "code": 223754,
+        "title": "The Lost City of Z",
+        "castingShort": {
+          "directors": "James Gray",
+          "actors": "Charlie Hunnam, Sienna Miller, Tom Holland, Robert Pattinson, Angus Macfadyen"
+        },
+        "release": {
+          "releaseDate": "2017-03-15"
+        },
+        "runtime": 8460,
+        "genre": [{
+          "code": 13001,
+          "$": "Aventure"
+        }],
+        "poster": {
+          "path": "\/pictures\/17\/02\/15\/10\/45\/490751.jpg",
+          "href": "http:\/\/images.allocine.fr\/pictures\/17\/02\/15\/10\/45\/490751.jpg"
+        },
+        "trailer": {
+          "code": 19567873,
+          "href": "http:\/\/www.allocine.fr\/blogvision\/19567873"
+        },
+        "trailerEmbed": "<div id='ACEmbed'><iframe src='http:\/\/www.allocine.fr\/_video\/iblogvision.aspx?cmedia=19567873&amp;isApp=true' style='width:480px; height:270px' frameborder='0' allowfullscreen='true'><\/iframe><br \/><a href=\"http:\/\/www.allocine.fr\/film\/fichefilm_gen_cfilm=223754.html\" target=\"_blank\">The Lost City of Z<\/a><\/div>",
+        "link": [{
+          "rel": "aco:web",
+          "name": "The Lost City of Z",
+          "href": "http:\/\/www.allocine.fr\/film\/fichefilm_gen_cfilm=223754.html"
+        }],
+        "statistics": {
+          "pressRating": 4.454545,
+          "pressReviewCount": 33,
+          "userRating": 3.836648,
+          "userReviewCount": 217,
+          "userRatingCount": 1972,
+          "editorialRatingCount": 0
+        }
+      }
+    },
+    "screen": {
+      "code": 206745,
+      "$": "01"
+    },
+    "version": {
+      "original": "true",
+      "code": 6002,
+      "lang": 6002,
+      "$": "Anglais"
+    },
+    "screenFormat": {
+      "code": 110002,
+      "$": "Numérique"
+    },
+    "seatCount": 104,
+    "display": "Séances du mercredi 10 mai 2017 : 14:00 (film à 14:10)\u000d\u000aSéances du jeudi 11 mai 2017 : 14:00 (film à 14:10)\u000d\u000aSéances du vendredi 12 mai 2017 : 14:00 (film à 14:10)\u000d\u000aSéances du samedi 13 mai 2017 : 10:00 (film à 10:10), 12:40 (film à 12:50)\u000d\u000aSéances du dimanche 14 mai 2017 : 10:00 (film à 10:10), 12:40 (film à 12:50)\u000d\u000aSéances du lundi 15 mai 2017 : 14:00 (film à 14:10)\u000d\u000aSéances du mardi 16 mai 2017 : 14:00 (film à 14:10)",
+    "scr": [{
+      "d": "2017-05-11",
+      "t": [{
+        "code": 420564899,
+        "p": 10,
+        "$": "14:00"
+      }]
+    }, {
+      "d": "2017-05-12",
+      "t": [{
+        "code": 420564902,
+        "p": 10,
+        "$": "14:00"
+      }]
+    }, {
+      "d": "2017-05-13",
+      "t": [{
+        "code": 420564911,
+        "p": 10,
+        "$": "10:00"
+      }, {
+        "code": 420564912,
+        "p": 10,
+        "$": "12:40"
+      }]
+    }, {
+      "d": "2017-05-14",
+      "t": [{
+        "code": 420582671,
+        "p": 10,
+        "$": "10:00"
+      }, {
+        "code": 420582672,
+        "p": 10,
+        "$": "12:40"
+      }]
+    }, {
+      "d": "2017-05-15",
+      "t": [{
+        "code": 420564905,
+        "p": 10,
+        "$": "14:00"
+      }]
+    }, {
+      "d": "2017-05-16",
+      "t": [{
+        "code": 420564908,
+        "p": 10,
+        "$": "14:00"
+      }]
+    }]
+  }]
+}, {
+  "place": {
+    "theater": {
+      "code": "C0023",
+      "distance": 5.509,
+      "name": "Le Brady Cinema & Théâtre",
+      "address": "39, bd de Strasbourg",
+      "postalCode": "75010",
+      "city": "Paris 10e arrondissement",
+      "area": "Île-de-France",
+      "picture": {
+        "path": "\/pictures\/213\/376\/21337659_214552987.jpg",
+        "href": "http:\/\/images.allocine.fr\/pictures\/213\/376\/21337659_214552987.jpg"
+      },
+      "cinemaChain": {
+        "code": 81186,
+        "$": "CIP (Cinémas Indépendants Parisiens)"
+      },
+      "openToSales": 1,
+      "geoloc": {
+        "lat": 48.8717206,
+        "long": 2.3555392
+      },
+      "link": [{
+        "rel": "aco:web",
+        "href": "http:\/\/www.allocine.fr\/seance\/salle_gen_csalle=C0023.html"
+      }]
+    }
+  },
+  "movieShowtimes": [{
+    "preview": "false",
+    "releaseWeek": "false",
+    "onShow": {
+      "movie": {
+        "code": 223754,
+        "title": "The Lost City of Z",
+        "castingShort": {
+          "directors": "James Gray",
+          "actors": "Charlie Hunnam, Sienna Miller, Tom Holland, Robert Pattinson, Angus Macfadyen"
+        },
+        "release": {
+          "releaseDate": "2017-03-15"
+        },
+        "runtime": 8460,
+        "genre": [{
+          "code": 13001,
+          "$": "Aventure"
+        }],
+        "poster": {
+          "path": "\/pictures\/17\/02\/15\/10\/45\/490751.jpg",
+          "href": "http:\/\/images.allocine.fr\/pictures\/17\/02\/15\/10\/45\/490751.jpg"
+        },
+        "trailer": {
+          "code": 19567873,
+          "href": "http:\/\/www.allocine.fr\/blogvision\/19567873"
+        },
+        "trailerEmbed": "<div id='ACEmbed'><iframe src='http:\/\/www.allocine.fr\/_video\/iblogvision.aspx?cmedia=19567873&amp;isApp=true' style='width:480px; height:270px' frameborder='0' allowfullscreen='true'><\/iframe><br \/><a href=\"http:\/\/www.allocine.fr\/film\/fichefilm_gen_cfilm=223754.html\" target=\"_blank\">The Lost City of Z<\/a><\/div>",
+        "link": [{
+          "rel": "aco:web",
+          "name": "The Lost City of Z",
+          "href": "http:\/\/www.allocine.fr\/film\/fichefilm_gen_cfilm=223754.html"
+        }],
+        "statistics": {
+          "pressRating": 4.454545,
+          "pressReviewCount": 33,
+          "userRating": 3.836648,
+          "userReviewCount": 217,
+          "userRatingCount": 1972,
+          "editorialRatingCount": 0
+        }
+      }
+    },
+    "version": {
+      "original": "true",
+      "code": 6002,
+      "lang": 6002,
+      "$": "Anglais"
+    },
+    "screenFormat": {
+      "code": 110002,
+      "$": "Numérique"
+    },
+    "display": "Séances du mercredi 10 mai 2017 : 21:45\u000d\u000aSéances du jeudi 11 mai 2017 : 19:20\u000d\u000aSéances du vendredi 12 mai 2017 : 13:50, 21:25\u000d\u000aSéances du samedi 13 mai 2017 : 13:50, 21:25\u000d\u000aSéances du dimanche 14 mai 2017 : 13:50\u000d\u000aSéances du lundi 15 mai 2017 : 13:50, 21:25\u000d\u000aSéances du mardi 16 mai 2017 : 19:20",
+    "scr": [{
+      "d": "2017-05-10",
+      "t": [{
+        "code": 422916844,
+        "p": 0,
+        "tk": "https:\/\/tickets.allocine.fr\/paris-le-brady\/reserver\/F67231\/D1494445500\/VO",
+        "$": "21:45"
+      }]
+    }, {
+      "d": "2017-05-11",
+      "t": [{
+        "code": 422916845,
+        "p": 0,
+        "tk": "https:\/\/tickets.allocine.fr\/paris-le-brady\/reserver\/F67231\/D1494523200\/VO",
+        "$": "19:20"
+      }]
+    }, {
+      "d": "2017-05-12",
+      "t": [{
+        "code": 422916804,
+        "p": 0,
+        "tk": "https:\/\/tickets.allocine.fr\/paris-le-brady\/reserver\/F67231\/D1494589800\/VO",
+        "$": "13:50"
+      }, {
+        "code": 422916846,
+        "p": 0,
+        "tk": "https:\/\/tickets.allocine.fr\/paris-le-brady\/reserver\/F67231\/D1494617100\/VO",
+        "$": "21:25"
+      }]
+    }, {
+      "d": "2017-05-13",
+      "t": [{
+        "code": 422916805,
+        "p": 0,
+        "tk": "https:\/\/tickets.allocine.fr\/paris-le-brady\/reserver\/F67231\/D1494676200\/VO",
+        "$": "13:50"
+      }, {
+        "code": 422916847,
+        "p": 0,
+        "tk": "https:\/\/tickets.allocine.fr\/paris-le-brady\/reserver\/F67231\/D1494703500\/VO",
+        "$": "21:25"
+      }]
+    }, {
+      "d": "2017-05-14",
+      "t": [{
+        "code": 422916806,
+        "p": 0,
+        "tk": "https:\/\/tickets.allocine.fr\/paris-le-brady\/reserver\/F67231\/D1494762600\/VO",
+        "$": "13:50"
+      }]
+    }, {
+      "d": "2017-05-15",
+      "t": [{
+        "code": 422916807,
+        "p": 0,
+        "tk": "https:\/\/tickets.allocine.fr\/paris-le-brady\/reserver\/F67231\/D1494849000\/VO",
+        "$": "13:50"
+      }, {
+        "code": 422916848,
+        "p": 0,
+        "tk": "https:\/\/tickets.allocine.fr\/paris-le-brady\/reserver\/F67231\/D1494876300\/VO",
+        "$": "21:25"
+      }]
+    }, {
+      "d": "2017-05-16",
+      "t": [{
+        "code": 422916849,
+        "p": 0,
+        "tk": "https:\/\/tickets.allocine.fr\/paris-le-brady\/reserver\/F67231\/D1494955200\/VO",
+        "$": "19:20"
+      }]
+    }]
+  }]
+}, {
+  "place": {
+    "theater": {
+      "code": "C1621",
+      "distance": 7.034,
+      "name": "MK2 Quai de Loire",
+      "address": "7 quai de Loire",
+      "postalCode": "75019",
+      "city": "Paris 19e arrondissement",
+      "area": "Île-de-France",
+      "picture": {
+        "path": "\/pictures\/\/211\/203\/21120371_194827851.jpg",
+        "href": "http:\/\/images.allocine.fr\/pictures\/\/211\/203\/21120371_194827851.jpg"
+      },
+      "cinemaChain": {
+        "code": 81004,
+        "$": "MK2"
+      },
+      "openToExternalSales": 1,
+      "geoloc": {
+        "lat": 48.8835120,
+        "long": 2.3710320
+      },
+      "link": [{
+        "rel": "aco:web",
+        "href": "http:\/\/www.allocine.fr\/seance\/salle_gen_csalle=C1621.html"
+      }]
+    }
+  },
+  "movieShowtimes": [{
+    "preview": "false",
+    "releaseWeek": "false",
+    "onShow": {
+      "movie": {
+        "code": 223754,
+        "title": "The Lost City of Z",
+        "castingShort": {
+          "directors": "James Gray",
+          "actors": "Charlie Hunnam, Sienna Miller, Tom Holland, Robert Pattinson, Angus Macfadyen"
+        },
+        "release": {
+          "releaseDate": "2017-03-15"
+        },
+        "runtime": 8460,
+        "genre": [{
+          "code": 13001,
+          "$": "Aventure"
+        }],
+        "poster": {
+          "path": "\/pictures\/17\/02\/15\/10\/45\/490751.jpg",
+          "href": "http:\/\/images.allocine.fr\/pictures\/17\/02\/15\/10\/45\/490751.jpg"
+        },
+        "trailer": {
+          "code": 19567873,
+          "href": "http:\/\/www.allocine.fr\/blogvision\/19567873"
+        },
+        "trailerEmbed": "<div id='ACEmbed'><iframe src='http:\/\/www.allocine.fr\/_video\/iblogvision.aspx?cmedia=19567873&amp;isApp=true' style='width:480px; height:270px' frameborder='0' allowfullscreen='true'><\/iframe><br \/><a href=\"http:\/\/www.allocine.fr\/film\/fichefilm_gen_cfilm=223754.html\" target=\"_blank\">The Lost City of Z<\/a><\/div>",
+        "link": [{
+          "rel": "aco:web",
+          "name": "The Lost City of Z",
+          "href": "http:\/\/www.allocine.fr\/film\/fichefilm_gen_cfilm=223754.html"
+        }],
+        "statistics": {
+          "pressRating": 4.454545,
+          "pressReviewCount": 33,
+          "userRating": 3.836648,
+          "userReviewCount": 217,
+          "userRatingCount": 1972,
+          "editorialRatingCount": 0
+        }
+      }
+    },
+    "version": {
+      "original": "true",
+      "code": 6002,
+      "lang": 6002,
+      "$": "Anglais"
+    },
+    "screenFormat": {
+      "code": 110002,
+      "$": "Numérique"
+    },
+    "display": "Séances du mercredi 10 mai 2017 : 10:00 (film à 10:20)\u000d\u000aSéances du jeudi 11 mai 2017 : 10:00 (film à 10:20)\u000d\u000aSéances du vendredi 12 mai 2017 : 10:00 (film à 10:20)\u000d\u000aSéances du lundi 15 mai 2017 : 10:00 (film à 10:20)\u000d\u000aSéances du mardi 16 mai 2017 : 10:00 (film à 10:20)",
+    "scr": [{
+      "d": "2017-05-11",
+      "t": [{
+        "code": 422920190,
+        "p": 20,
+        "tk": "https:\/\/www.mk2.com\/reservation-directe?seance_sku=8362_6_11-05-171493995180_83621494352502146_M",
+        "$": "10:00"
+      }]
+    }, {
+      "d": "2017-05-12",
+      "t": [{
+        "code": 422920231,
+        "p": 20,
+        "tk": "https:\/\/www.mk2.com\/reservation-directe?seance_sku=8362_6_12-05-171493995213_83621494352502146_M",
+        "$": "10:00"
+      }]
+    }, {
+      "d": "2017-05-15",
+      "t": [{
+        "code": 422920158,
+        "p": 20,
+        "tk": "https:\/\/www.mk2.com\/reservation-directe?seance_sku=8362_6_15-05-171493995312_83621494352502146_M",
+        "$": "10:00"
+      }]
+    }, {
+      "d": "2017-05-16",
+      "t": [{
+        "code": 422920232,
+        "p": 20,
+        "tk": "https:\/\/www.mk2.com\/reservation-directe?seance_sku=8362_6_16-05-171493995345_83621494352502146_M",
+        "$": "10:00"
+      }]
+    }]
+  }]
+}, {
+  "place": {
+    "theater": {
+      "code": "C0061",
+      "distance": 7.096,
+      "name": "Cinéma Studio 28",
+      "address": "10, rue Tholoze",
+      "postalCode": "75018",
+      "city": "Paris 18e arrondissement",
+      "area": "Île-de-France",
+      "picture": {
+        "path": "\/pictures\/213\/231\/21323159_163053923.jpg",
+        "href": "http:\/\/images.allocine.fr\/pictures\/213\/231\/21323159_163053923.jpg"
+      },
+      "cinemaChain": {
+        "code": 81007,
+        "$": "Indépendant"
+      },
+      "geoloc": {
+        "lat": 48.8861860,
+        "long": 2.3353660
+      },
+      "link": [{
+        "rel": "aco:web",
+        "href": "http:\/\/www.allocine.fr\/seance\/salle_gen_csalle=C0061.html"
+      }]
+    }
+  },
+  "movieShowtimes": [{
+    "preview": "false",
+    "releaseWeek": "false",
+    "onShow": {
+      "movie": {
+        "code": 223754,
+        "title": "The Lost City of Z",
+        "castingShort": {
+          "directors": "James Gray",
+          "actors": "Charlie Hunnam, Sienna Miller, Tom Holland, Robert Pattinson, Angus Macfadyen"
+        },
+        "release": {
+          "releaseDate": "2017-03-15"
+        },
+        "runtime": 8460,
+        "genre": [{
+          "code": 13001,
+          "$": "Aventure"
+        }],
+        "poster": {
+          "path": "\/pictures\/17\/02\/15\/10\/45\/490751.jpg",
+          "href": "http:\/\/images.allocine.fr\/pictures\/17\/02\/15\/10\/45\/490751.jpg"
+        },
+        "trailer": {
+          "code": 19567873,
+          "href": "http:\/\/www.allocine.fr\/blogvision\/19567873"
+        },
+        "trailerEmbed": "<div id='ACEmbed'><iframe src='http:\/\/www.allocine.fr\/_video\/iblogvision.aspx?cmedia=19567873&amp;isApp=true' style='width:480px; height:270px' frameborder='0' allowfullscreen='true'><\/iframe><br \/><a href=\"http:\/\/www.allocine.fr\/film\/fichefilm_gen_cfilm=223754.html\" target=\"_blank\">The Lost City of Z<\/a><\/div>",
+        "link": [{
+          "rel": "aco:web",
+          "name": "The Lost City of Z",
+          "href": "http:\/\/www.allocine.fr\/film\/fichefilm_gen_cfilm=223754.html"
+        }],
+        "statistics": {
+          "pressRating": 4.454545,
+          "pressReviewCount": 33,
+          "userRating": 3.836648,
+          "userReviewCount": 217,
+          "userRatingCount": 1972,
+          "editorialRatingCount": 0
+        }
+      }
+    },
+    "version": {
+      "original": "true",
+      "code": 6002,
+      "lang": 6002,
+      "$": "Anglais"
+    },
+    "screenFormat": {
+      "code": 110002,
+      "$": "Numérique"
+    },
+    "display": "Séances du lundi 15 mai 2017 : 20:35",
+    "scr": [{
+      "d": "2017-05-15",
+      "t": [{
+        "code": 420677323,
+        "p": 0,
+        "$": "20:35"
+      }]
+    }]
+  }]
+}, {
+  "place": {
+    "theater": {
+      "code": "W9280",
+      "distance": 10.386,
+      "name": "Le Central",
+      "address": "136 rue de la République",
+      "postalCode": "92800",
+      "city": "Puteaux",
+      "area": "Île-de-France",
+      "picture": {
+        "path": "\/pictures\/211\/815\/21181516_093803033.jpg",
+        "href": "http:\/\/images.allocine.fr\/pictures\/211\/815\/21181516_093803033.jpg"
+      },
+      "cinemaChain": {
+        "code": 81007,
+        "$": "Indépendant"
+      },
+      "geoloc": {
+        "lat": 48.8856080,
+        "long": 2.2399740
+      },
+      "link": [{
+        "rel": "aco:web",
+        "href": "http:\/\/www.allocine.fr\/seance\/salle_gen_csalle=W9280.html"
+      }]
+    }
+  },
+  "movieShowtimes": [{
+    "preview": "false",
+    "releaseWeek": "false",
+    "onShow": {
+      "movie": {
+        "code": 223754,
+        "title": "The Lost City of Z",
+        "castingShort": {
+          "directors": "James Gray",
+          "actors": "Charlie Hunnam, Sienna Miller, Tom Holland, Robert Pattinson, Angus Macfadyen"
+        },
+        "release": {
+          "releaseDate": "2017-03-15"
+        },
+        "runtime": 8460,
+        "genre": [{
+          "code": 13001,
+          "$": "Aventure"
+        }],
+        "poster": {
+          "path": "\/pictures\/17\/02\/15\/10\/45\/490751.jpg",
+          "href": "http:\/\/images.allocine.fr\/pictures\/17\/02\/15\/10\/45\/490751.jpg"
+        },
+        "trailer": {
+          "code": 19567873,
+          "href": "http:\/\/www.allocine.fr\/blogvision\/19567873"
+        },
+        "trailerEmbed": "<div id='ACEmbed'><iframe src='http:\/\/www.allocine.fr\/_video\/iblogvision.aspx?cmedia=19567873&amp;isApp=true' style='width:480px; height:270px' frameborder='0' allowfullscreen='true'><\/iframe><br \/><a href=\"http:\/\/www.allocine.fr\/film\/fichefilm_gen_cfilm=223754.html\" target=\"_blank\">The Lost City of Z<\/a><\/div>",
+        "link": [{
+          "rel": "aco:web",
+          "name": "The Lost City of Z",
+          "href": "http:\/\/www.allocine.fr\/film\/fichefilm_gen_cfilm=223754.html"
+        }],
+        "statistics": {
+          "pressRating": 4.454545,
+          "pressReviewCount": 33,
+          "userRating": 3.836648,
+          "userReviewCount": 217,
+          "userRatingCount": 1972,
+          "editorialRatingCount": 0
+        }
+      }
+    },
+    "version": {
+      "original": "true",
+      "code": 6002,
+      "lang": 6002,
+      "$": "Anglais"
+    },
+    "screenFormat": {
+      "code": 110002,
+      "$": "Numérique"
+    },
+    "display": "Séances du mercredi 10 mai 2017 : 19:50 (film à 19:55)\u000d\u000aSéances du jeudi 11 mai 2017 : 19:50 (film à 19:55)\u000d\u000aSéances du vendredi 12 mai 2017 : 17:00 (film à 17:05)\u000d\u000aSéances du lundi 15 mai 2017 : 17:00 (film à 17:05)\u000d\u000aSéances du mardi 16 mai 2017 : 19:50 (film à 19:55)",
+    "scr": [{
+      "d": "2017-05-10",
+      "t": [{
+        "code": 420593481,
+        "p": 5,
+        "$": "19:50"
+      }]
+    }, {
+      "d": "2017-05-11",
+      "t": [{
+        "code": 420593443,
+        "p": 5,
+        "$": "19:50"
+      }]
+    }, {
+      "d": "2017-05-12",
+      "t": [{
+        "code": 420593444,
+        "p": 5,
+        "$": "17:00"
+      }]
+    }, {
+      "d": "2017-05-15",
+      "t": [{
+        "code": 420593445,
+        "p": 5,
+        "$": "17:00"
+      }]
+    }, {
+      "d": "2017-05-16",
+      "t": [{
+        "code": 420593446,
+        "p": 5,
+        "$": "19:50"
+      }]
+    }]
+  }]
+}, {
+  "place": {
+    "theater": {
+      "code": "B0022",
+      "distance": 15.501,
+      "name": "Cinema du Theatre",
+      "address": "8, av. Charles-de-Gaulle (mairie)",
+      "postalCode": "78170",
+      "city": "La Celle-Saint-Cloud",
+      "area": "Île-de-France",
+      "cinemaChain": {
+        "code": 81007,
+        "$": "Indépendant"
+      },
+      "hasPRMAccess": 1,
+      "geoloc": {
+        "lat": 48.8481180,
+        "long": 2.1367440
+      },
+      "link": [{
+        "rel": "aco:web",
+        "href": "http:\/\/www.allocine.fr\/seance\/salle_gen_csalle=B0022.html"
+      }]
+    }
+  },
+  "movieShowtimes": [{
+    "preview": "false",
+    "releaseWeek": "false",
+    "onShow": {
+      "movie": {
+        "code": 223754,
+        "title": "The Lost City of Z",
+        "castingShort": {
+          "directors": "James Gray",
+          "actors": "Charlie Hunnam, Sienna Miller, Tom Holland, Robert Pattinson, Angus Macfadyen"
+        },
+        "release": {
+          "releaseDate": "2017-03-15"
+        },
+        "runtime": 8460,
+        "genre": [{
+          "code": 13001,
+          "$": "Aventure"
+        }],
+        "poster": {
+          "path": "\/pictures\/17\/02\/15\/10\/45\/490751.jpg",
+          "href": "http:\/\/images.allocine.fr\/pictures\/17\/02\/15\/10\/45\/490751.jpg"
+        },
+        "trailer": {
+          "code": 19567873,
+          "href": "http:\/\/www.allocine.fr\/blogvision\/19567873"
+        },
+        "trailerEmbed": "<div id='ACEmbed'><iframe src='http:\/\/www.allocine.fr\/_video\/iblogvision.aspx?cmedia=19567873&amp;isApp=true' style='width:480px; height:270px' frameborder='0' allowfullscreen='true'><\/iframe><br \/><a href=\"http:\/\/www.allocine.fr\/film\/fichefilm_gen_cfilm=223754.html\" target=\"_blank\">The Lost City of Z<\/a><\/div>",
+        "link": [{
+          "rel": "aco:web",
+          "name": "The Lost City of Z",
+          "href": "http:\/\/www.allocine.fr\/film\/fichefilm_gen_cfilm=223754.html"
+        }],
+        "statistics": {
+          "pressRating": 4.454545,
+          "pressReviewCount": 33,
+          "userRating": 3.836648,
+          "userReviewCount": 217,
+          "userRatingCount": 1972,
+          "editorialRatingCount": 0
+        }
+      }
+    },
+    "version": {
+      "original": "true",
+      "code": 6002,
+      "lang": 6002,
+      "$": "Anglais"
+    },
+    "screenFormat": {
+      "code": 110002,
+      "$": "Numérique"
+    },
+    "display": "Séances du samedi 20 mai 2017 : 19:30",
+    "scr": [{
+      "d": "2017-05-20",
+      "t": [{
+        "code": 422851767,
+        "p": 0,
+        "$": "19:30"
+      }]
+    }]
+  }]
+}, {
+  "place": {
+    "theater": {
+      "code": "B0003",
+      "distance": 18.734,
+      "name": "Etoile Cosmos",
+      "address": "22, av. de la Resistance",
+      "postalCode": "77500",
+      "city": "Chelles",
+      "area": "Île-de-France",
+      "picture": {
+        "path": "\/pictures\/212\/777\/21277786_120548473.jpg",
+        "href": "http:\/\/images.allocine.fr\/pictures\/212\/777\/21277786_120548473.jpg"
+      },
+      "cinemaChain": {
+        "code": 81007,
+        "$": "Indépendant"
+      },
+      "openToSales": 1,
+      "geoloc": {
+        "lat": 48.8778260,
+        "long": 2.5864170
+      },
+      "link": [{
+        "rel": "aco:web",
+        "href": "http:\/\/www.allocine.fr\/seance\/salle_gen_csalle=B0003.html"
+      }]
+    }
+  },
+  "movieShowtimes": [{
+    "preview": "false",
+    "releaseWeek": "false",
+    "onShow": {
+      "movie": {
+        "code": 223754,
+        "title": "The Lost City of Z",
+        "castingShort": {
+          "directors": "James Gray",
+          "actors": "Charlie Hunnam, Sienna Miller, Tom Holland, Robert Pattinson, Angus Macfadyen"
+        },
+        "release": {
+          "releaseDate": "2017-03-15"
+        },
+        "runtime": 8460,
+        "genre": [{
+          "code": 13001,
+          "$": "Aventure"
+        }],
+        "poster": {
+          "path": "\/pictures\/17\/02\/15\/10\/45\/490751.jpg",
+          "href": "http:\/\/images.allocine.fr\/pictures\/17\/02\/15\/10\/45\/490751.jpg"
+        },
+        "trailer": {
+          "code": 19567873,
+          "href": "http:\/\/www.allocine.fr\/blogvision\/19567873"
+        },
+        "trailerEmbed": "<div id='ACEmbed'><iframe src='http:\/\/www.allocine.fr\/_video\/iblogvision.aspx?cmedia=19567873&amp;isApp=true' style='width:480px; height:270px' frameborder='0' allowfullscreen='true'><\/iframe><br \/><a href=\"http:\/\/www.allocine.fr\/film\/fichefilm_gen_cfilm=223754.html\" target=\"_blank\">The Lost City of Z<\/a><\/div>",
+        "link": [{
+          "rel": "aco:web",
+          "name": "The Lost City of Z",
+          "href": "http:\/\/www.allocine.fr\/film\/fichefilm_gen_cfilm=223754.html"
+        }],
+        "statistics": {
+          "pressRating": 4.454545,
+          "pressReviewCount": 33,
+          "userRating": 3.836648,
+          "userReviewCount": 217,
+          "userRatingCount": 1972,
+          "editorialRatingCount": 0
+        }
+      }
+    },
+    "version": {
+      "original": "true",
+      "code": 6002,
+      "lang": 6002,
+      "$": "Anglais"
+    },
+    "screenFormat": {
+      "code": 110002,
+      "$": "Numérique"
+    },
+    "display": "Séances du mercredi 10 mai 2017 : 17:45\u000d\u000aSéances du jeudi 11 mai 2017 : 14:00, 20:30\u000d\u000aSéances du samedi 13 mai 2017 : 20:30\u000d\u000aSéances du dimanche 14 mai 2017 : 17:40\u000d\u000aSéances du lundi 15 mai 2017 : 16:00",
+    "scr": [{
+      "d": "2017-05-11",
+      "t": [{
+        "code": 422266192,
+        "p": 0,
+        "tk": "https:\/\/tickets.allocine.fr\/etoile-portail\/cosmos\/reserver\/F67231\/D1494504000\/VO",
+        "$": "14:00"
+      }, {
+        "code": 422266170,
+        "p": 0,
+        "tk": "https:\/\/tickets.allocine.fr\/etoile-portail\/cosmos\/reserver\/F67231\/D1494527400\/VO",
+        "$": "20:30"
+      }]
+    }, {
+      "d": "2017-05-13",
+      "t": [{
+        "code": 422266193,
+        "p": 0,
+        "tk": "https:\/\/tickets.allocine.fr\/etoile-portail\/cosmos\/reserver\/F67231\/D1494700200\/VO",
+        "$": "20:30"
+      }]
+    }, {
+      "d": "2017-05-14",
+      "t": [{
+        "code": 422266171,
+        "p": 0,
+        "tk": "https:\/\/tickets.allocine.fr\/etoile-portail\/cosmos\/reserver\/F67231\/D1494776400\/VO",
+        "$": "17:40"
+      }]
+    }, {
+      "d": "2017-05-15",
+      "t": [{
+        "code": 422266194,
+        "p": 0,
+        "tk": "https:\/\/tickets.allocine.fr\/etoile-portail\/cosmos\/reserver\/F67231\/D1494856800\/VO",
+        "$": "16:00"
+      }]
+    }]
+  }]
+}, {
+  "place": {
+    "theater": {
+      "code": "B0037",
+      "distance": 20.490,
+      "name": "Cinéma Les Yeux d'Elsa",
+      "address": "11 bis av. Jean Jaurès",
+      "postalCode": "78210",
+      "city": "Saint-Cyr-l'École",
+      "area": "Île-de-France",
+      "picture": {
+        "path": "\/medias\/nmedia\/18\/66\/59\/86\/19044349.jpg",
+        "href": "http:\/\/images.allocine.fr\/medias\/nmedia\/18\/66\/59\/86\/19044349.jpg"
+      },
+      "cinemaChain": {
+        "code": 81007,
+        "$": "Indépendant"
+      },
+      "hasPRMAccess": 1,
+      "geoloc": {
+        "lat": 48.7997920,
+        "long": 2.0674250
+      },
+      "link": [{
+        "rel": "aco:web",
+        "href": "http:\/\/www.allocine.fr\/seance\/salle_gen_csalle=B0037.html"
+      }]
+    }
+  },
+  "movieShowtimes": [{
+    "preview": "false",
+    "releaseWeek": "false",
+    "onShow": {
+      "movie": {
+        "code": 223754,
+        "title": "The Lost City of Z",
+        "castingShort": {
+          "directors": "James Gray",
+          "actors": "Charlie Hunnam, Sienna Miller, Tom Holland, Robert Pattinson, Angus Macfadyen"
+        },
+        "release": {
+          "releaseDate": "2017-03-15"
+        },
+        "runtime": 8460,
+        "genre": [{
+          "code": 13001,
+          "$": "Aventure"
+        }],
+        "poster": {
+          "path": "\/pictures\/17\/02\/15\/10\/45\/490751.jpg",
+          "href": "http:\/\/images.allocine.fr\/pictures\/17\/02\/15\/10\/45\/490751.jpg"
+        },
+        "trailer": {
+          "code": 19567873,
+          "href": "http:\/\/www.allocine.fr\/blogvision\/19567873"
+        },
+        "trailerEmbed": "<div id='ACEmbed'><iframe src='http:\/\/www.allocine.fr\/_video\/iblogvision.aspx?cmedia=19567873&amp;isApp=true' style='width:480px; height:270px' frameborder='0' allowfullscreen='true'><\/iframe><br \/><a href=\"http:\/\/www.allocine.fr\/film\/fichefilm_gen_cfilm=223754.html\" target=\"_blank\">The Lost City of Z<\/a><\/div>",
+        "link": [{
+          "rel": "aco:web",
+          "name": "The Lost City of Z",
+          "href": "http:\/\/www.allocine.fr\/film\/fichefilm_gen_cfilm=223754.html"
+        }],
+        "statistics": {
+          "pressRating": 4.454545,
+          "pressReviewCount": 33,
+          "userRating": 3.836648,
+          "userReviewCount": 217,
+          "userRatingCount": 1972,
+          "editorialRatingCount": 0
+        }
+      }
+    },
+    "version": {
+      "original": "false",
+      "code": 6001,
+      "lang": 6001,
+      "$": "Français"
+    },
+    "screenFormat": {
+      "code": 110002,
+      "$": "Numérique"
+    },
+    "display": "Séances du vendredi 12 mai 2017 : 16:15\u000d\u000aSéances du samedi 13 mai 2017 : 18:15\u000d\u000aSéances du dimanche 14 mai 2017 : 18:10",
+    "scr": [{
+      "d": "2017-05-12",
+      "t": [{
+        "code": 422678246,
+        "p": 0,
+        "$": "16:15"
+      }]
+    }, {
+      "d": "2017-05-13",
+      "t": [{
+        "code": 422678247,
+        "p": 0,
+        "$": "18:15"
+      }]
+    }, {
+      "d": "2017-05-14",
+      "t": [{
+        "code": 422678248,
+        "p": 0,
+        "$": "18:10"
+      }]
+    }]
+  }, {
+    "preview": "false",
+    "releaseWeek": "false",
+    "onShow": {
+      "movie": {
+        "code": 223754,
+        "title": "The Lost City of Z",
+        "castingShort": {
+          "directors": "James Gray",
+          "actors": "Charlie Hunnam, Sienna Miller, Tom Holland, Robert Pattinson, Angus Macfadyen"
+        },
+        "release": {
+          "releaseDate": "2017-03-15"
+        },
+        "runtime": 8460,
+        "genre": [{
+          "code": 13001,
+          "$": "Aventure"
+        }],
+        "poster": {
+          "path": "\/pictures\/17\/02\/15\/10\/45\/490751.jpg",
+          "href": "http:\/\/images.allocine.fr\/pictures\/17\/02\/15\/10\/45\/490751.jpg"
+        },
+        "trailer": {
+          "code": 19567873,
+          "href": "http:\/\/www.allocine.fr\/blogvision\/19567873"
+        },
+        "trailerEmbed": "<div id='ACEmbed'><iframe src='http:\/\/www.allocine.fr\/_video\/iblogvision.aspx?cmedia=19567873&amp;isApp=true' style='width:480px; height:270px' frameborder='0' allowfullscreen='true'><\/iframe><br \/><a href=\"http:\/\/www.allocine.fr\/film\/fichefilm_gen_cfilm=223754.html\" target=\"_blank\">The Lost City of Z<\/a><\/div>",
+        "link": [{
+          "rel": "aco:web",
+          "name": "The Lost City of Z",
+          "href": "http:\/\/www.allocine.fr\/film\/fichefilm_gen_cfilm=223754.html"
+        }],
+        "statistics": {
+          "pressRating": 4.454545,
+          "pressReviewCount": 33,
+          "userRating": 3.836648,
+          "userReviewCount": 217,
+          "userRatingCount": 1972,
+          "editorialRatingCount": 0
+        }
+      }
+    },
+    "version": {
+      "original": "true",
+      "code": 6002,
+      "lang": 6002,
+      "$": "Anglais"
+    },
+    "screenFormat": {
+      "code": 110002,
+      "$": "Numérique"
+    },
+    "display": "Séances du mercredi 10 mai 2017 : 20:45",
+    "scr": [{
+      "d": "2017-05-10",
+      "t": [{
+        "code": 422678245,
+        "p": 0,
+        "$": "20:45"
+      }]
+    }]
+  }]
+}]
