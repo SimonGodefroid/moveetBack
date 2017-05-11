@@ -166,5 +166,5 @@ io.on("connection", function(client) {
 });
 
 server.listen(process.env.PORT, function() {
-  console.log("serverMessage listen 3000");
+  console.log(`Moveet chat running on port ${process.env.PORT}`);
 });
