@@ -157,6 +157,6 @@ io.on("connection", function(client) {
   });
 });
 
-server.listen(3000, function() {
+server.listen(process.env.PORT, function() {
   console.log("serverMessage listen 3000");
 });
