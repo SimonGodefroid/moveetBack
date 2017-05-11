@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nf start",
+    "start": "nf start --concurrency='web=0,worker=6'",
     "dev": "nodemon server.js",
     "chat": "nodemon serverMessages.js",
     "importData": "node data/importAllocineNowShowingMovies.js  && node data/importAllocineComingSoonMovies.js && node data/importUsers.js",
