@@ -175,14 +175,3 @@
 // console.log(_.intersection(arrId, array2));
 
 var showtimesData = require("./showtimes.json");
-
-var theaters = showtimesData.map((location, index) => {
-  return location["place"];
-});
-
-var showtimes = showtimesData.map((location, index) => {
-  return location["movieShowtimes"];
-});
-
-// console.log(theaters);
-console.log(showtimes);
