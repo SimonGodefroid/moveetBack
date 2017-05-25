@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node serverMessages.js",
+    "start": "concurrently \"nodemon serverMessages.js\" \"nodemon server.js\"",
     "dev": "nodemon server.js",
     "chat": "nodemon serverMessages.js",
     "importData": "node data/importAllocineNowShowingMovies.js  && node data/importAllocineComingSoonMovies.js && node data/importUsers.js",
@@ -17,11 +17,12 @@
   "dependencies": {
     "allocine-api": "*",
     "body-parser": "^1.16.1",
+    "cloudinary": "^1.9.0",
     "compression": "^1.6.2",
     "cors": "^2.8.1",
     "dotenv": "^4.0.0",
-    "faker": "^4.1.0",
     "express": "^4.14.1",
+    "faker": "^4.1.0",
     "helmet": "^3.4.1",
     "jsonfile": "^2.4.0",
     "lodash": "^4.17.4",

@@ -22,7 +22,9 @@ var allocine = function() {
       count: "",
       lat: "",
       long: "",
-      radius: ""
+      radius: "",
+      theaters: "",
+      code: ""
     },
     movielist: {
       profile: "large"

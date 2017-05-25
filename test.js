@@ -173,5 +173,24 @@
 // });
 
 // console.log(_.intersection(arrId, array2));
+// require("dotenv").config();
+// var cloudinary = require("cloudinary");
 
-var showtimesData = require("./showtimes.json");
+// cloudinary.uploader.upload("data:image/gif;base64," + data, function(result) {
+//   console.log(result);
+// });
+var allocine = require("./services/AllocineShowTimes.js");
+
+allocine.api(
+  "showtimelist",
+  {
+    code: 419350304
+  },
+  function(error, results) {
+    if (error) {
+      console.log("Error : " + error);
+      return;
+    }
+    console.log(results);
+  }
+);

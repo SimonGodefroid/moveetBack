@@ -8,7 +8,7 @@ mongoose.Promise = global.Promise;
 mongoose.connect(process.env.MONGODB_URI, function(err) {
   if (err) console.error("Could not connect to mongodb.");
   console.log("CHAT $ on est connectés à la DB");
-  console.log("CHAT $ process.env", process.env);
+  //console.log("CHAT $ process.env", process.env);
 });
 
 // var WebSocketServer = require('ws').Server;
@@ -165,6 +165,11 @@ io.on("connection", function(client) {
   });
 });
 
-server.listen(process.env.PORT, function() {
-  console.log(`Moveet chat running on port ${process.env.PORT}`);
+server.listen(3000, function() {
+  console.log(`Moveet chat running on port 3000`);
 });
+
+// for prod
+// server.listen(process.env.PORT, function() {
+//   console.log(`Moveet chat running on port ${process.env.PORT}`);
+// });

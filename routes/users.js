@@ -5,7 +5,7 @@ var uid2 = require("uid2");
 
 var User = require("../models/User.js");
 
-router.post("/sign_up", function(req, res) {
+router.post("/sign_up", function (req, res) {
   User.register(
     new User({
       email: req.body.email,
@@ -13,61 +13,59 @@ router.post("/sign_up", function(req, res) {
       token: uid2(16), // uid2 permet de générer une clef aléatoirement. Ce token devra être regénérer lorsque l'utilisateur changera son mot de passe
       account: {
         username: req.body.username,
-        name: req.body.name,
-        description: req.body.description
+        favorites: [],
+        age: 0,
+        description: "",
+        genre: "",
+        subscription: "",
+        picture: "",
+        location: {
+          latitude: 0,
+          longitude: 0
+        }
       }
     }),
     req.body.password, // Le mot de passe doit être obligatoirement le deuxième paramètre transmis à `register` afin d'être crypté
-    function(err, user) {
+    function (err, user) {
       if (err) {
         console.error(err);
         // TODO test
-        res.status(400).json({ error: err.message });
+        res.status(400).json({
+          error: err.message
+        });
       } else {
-        res.json({ _id: user._id, token: user.token, account: user.account });
+        res.json({
+          _id: user._id,
+          token: user.token,
+          account: user.account
+        });
       }
     }
   );
 });
 
-router.post("/log_in", function(req, res, next) {
-  passport.authenticate("local", { session: false }, function(err, user, info) {
-    if (err) {
-      res.status(400);
-      return next(err.message);
+router.post("/log_in", function (req, res, next) {
+  passport.authenticate(
+    "local", {
+      session: false
+    },
+    function (err, user, info) {
+      if (err) {
+        res.status(400);
+        return next(err.message);
+      }
+      if (!user) {
+        return res.status(401).json({
+          error: "Unauthorized"
+        });
+      }
+      res.json({
+        _id: user._id,
+        token: user.token,
+        account: user.account
+      });
     }
-    if (!user) {
-      return res.status(401).json({ error: "Unauthorized" });
-    }
-    res.json({
-      _id: user._id,
-      token: user.token,
-      account: user.account
-    });
-  })(req, res, next);
+  )(req, res, next);
 });
-
-// router.get("/:id", function(req, res) {
-//   User.findById(req.params.id)
-//     .select("account")
-//     .populate("account.rooms")
-//     .populate("account.favorites")
-//     .exec()
-//     .then(function(user) {
-//       if (!user) {
-//         res.status(404);
-//         return next("User not found");
-//       }
-
-//       return res.json({
-//         _id: user._id,
-//         account: user.account
-//       });
-//     })
-//     .catch(function(err) {
-//       res.status(400);
-//       return next(err.message);
-//     });
-// });
 
 module.exports = router;

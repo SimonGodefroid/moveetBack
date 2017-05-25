@@ -96,8 +96,14 @@ app.use(function(err, req, res, next) {
 
 app.listen(process.env.PORT, function() {
   console.log(`Moveet API running on port ${process.env.PORT}`);
-  console.log("Moveet API process.env", process.env);
+  //console.log("Moveet API process.env", process.env);
 });
+
+// for local dev only
+// app.listen(3000, function() {
+//   console.log(`Moveet API running on port 3000`);
+//   //console.log("Moveet API process.env", process.env);
+// });
 
 // TODO test
 // console.log(`process.env.NODE_ENV = ${process.env.NODE_ENV}`);

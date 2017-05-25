@@ -184,7 +184,8 @@ router.get("/showtimes", function(req, res, next) {
       count: !req.query.count ? 100 : req.query.count,
       lat: req.query.lat,
       long: req.query.long,
-      radius: !req.query.radius ? 40 : req.query.radius
+      radius: !req.query.radius ? 40 : req.query.radius,
+      theaters: !req.query.theaters ? "" : req.query.theaters
     },
     function(error, results) {
       if (error) {
