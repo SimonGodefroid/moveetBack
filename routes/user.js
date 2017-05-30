@@ -218,7 +218,7 @@ router.post("/:userId/saveUserImage/", function(req, res, next) {
         } else {
           (user.account.picture = result.secure_url), user.save(
             function(err, obj) {
-              console.log(obj);
+              console.log("user.account.picture", user.account.picture);
               console.log("on a sauvé l'image pour cet user");
               res.send("Image updated for user");
             }
