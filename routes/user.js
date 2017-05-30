@@ -207,7 +207,7 @@ router.post("/:userId/saveUserImage/", function(req, res, next) {
   console.log("req.body.imagePath", req.body.imagePath);
 
   cloudinary.uploader.upload(req.body.imagePath, function(result) {
-    console.log(result);
+    console.log("result cloudinary", result);
     User.findOne(
       {
         _id: req.params.userId
