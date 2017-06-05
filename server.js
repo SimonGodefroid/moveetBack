@@ -5,7 +5,7 @@ require("dotenv").config();
 // Le package `mongoose` est un ODM (Object-Document Mapping) permettant de manipuler les documents de la base de données comme si c'étaient des objets
 var mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
-mongoose.connect(process.env.MONGODB_URI, function(err) {
+mongoose.connect(process.env.MONGODB_URI, function (err) {
   // paramètre qui vient de dotenv
   if (err) console.error("Could not connect to mongodb.");
 });
@@ -24,7 +24,10 @@ app.use(compression());
 
 // Parse le `body` des requêtes HTTP reçues
 var bodyParser = require("body-parser");
-app.use(bodyParser.json());
+//app.use(bodyParser.json());
+app.use(bodyParser.json({ limit: '15mb' }));
+app.use(bodyParser.urlencoded({ limit: '15mb', extended: true }));
+
 
 // Initialisation des models
 //var Movies = require("./models/_Movie");
@@ -49,7 +52,7 @@ passport.use(
   )
 );
 
-app.get("/", function(req, res) {
+app.get("/", function (req, res) {
   res.render(index);
 });
 
@@ -75,7 +78,7 @@ app.use("/api/theaters", theatersRoutes);
 // Les routes relatives aux utilisateurs auront pour prefix d'URL `/user`
 
 // Toutes les méthodes HTTP (GET, POST, etc.) des pages non trouvées afficheront une erreur 404
-app.all("*", function(req, res) {
+app.all("*", function (req, res) {
   res.status(404).json({
     error: "Not Found"
   });
@@ -84,7 +87,7 @@ app.all("*", function(req, res) {
 // Le dernier middleware de la chaîne gérera les d'erreurs
 // Ce `error handler` doit définir obligatoirement 4 paramètres
 // Définition d'un middleware : https://expressjs.com/en/guide/writing-middleware.html
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
   if (res.statusCode === 200) res.status(400);
   console.error(err);
 
@@ -94,7 +97,7 @@ app.use(function(err, req, res, next) {
   });
 });
 
-app.listen(process.env.PORT, function() {
+app.listen(process.env.PORT, function () {
   console.log(`Moveet API running on port ${process.env.PORT}`);
   //console.log("Moveet API process.env", process.env);
 });

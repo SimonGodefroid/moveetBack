@@ -8,14 +8,14 @@ var AllocineMovie = require("../models/AllocineMovie.js");
 var request = require("request");
 var _ = require("lodash");
 // http://localhost:3002/api/user/58ef71e29c963afa6e9c974b/favorites
-router.get("/:userId/favorites", function(req, res, next) {
+router.get("/:userId/favorites", function (req, res, next) {
   User.findById(req.params.userId)
     .populate("account.favorites")
     .sort({
       "release.releaseDate": "ascending"
     })
     .exec()
-    .then(function(user) {
+    .then(function (user) {
       console.log("Route user/:user_id/favorites ", user);
       if (!user) {
         res.status(404);
@@ -23,19 +23,19 @@ router.get("/:userId/favorites", function(req, res, next) {
       }
       return res.json(user.account.favorites);
     })
-    .catch(function(err) {
+    .catch(function (err) {
       res.status(400);
       return next(err.message);
     });
 });
 
-router.get("/show/:userId", function(req, res, next) {
+router.get("/show/:userId", function (req, res, next) {
   User.findById(req.params.userId)
     .select("_id token account")
     .populate("account.buddiesRequestsReceived._id", "account")
     .populate("account.buddiesRequestsSent._id", "account")
     .populate("account.buddies._id", "account")
-    .then(function(user) {
+    .then(function (user) {
       console.log("Route user/show/:userId ", user);
       var buddiesRequestsSentArray = new Array();
       for (var o = 0; o < user.account.buddiesRequestsSent.length; o++) {
@@ -67,16 +67,16 @@ router.get("/show/:userId", function(req, res, next) {
         }
       });
     })
-    .catch(function(err) {
+    .catch(function (err) {
       res.status(400);
       return next(err.message);
     });
 });
 
-router.get("/matches/:userId", function(req, res) {
+router.get("/matches/:userId", function (req, res) {
   //console.log("finding matches for id", req.params.userId);
   // on cherche l'utilisateur connecté
-  User.findById(req.params.userId).exec(function(err, user) {
+  User.findById(req.params.userId).exec(function (err, user) {
     if (err) {
       console.log("An error occurred" + err);
     } else {
@@ -88,13 +88,13 @@ router.get("/matches/:userId", function(req, res) {
         .populate("account.favorites", "originalTitle")
         .select("-token -email -__v")
         .in(query)
-        .exec(function(err, matches) {
+        .exec(function (err, matches) {
           if (err) {
             console.log("An error occurred" + err);
           } else {
             // matches un tableau d'utilisateurs dont les favorites contiennent au moins un film en commun avec ceux du current user. Ce tableau contient aussi le current user, ainsi pour le sortir des résultats on fait un tableau temporaire qui s'appelle elementPos qui contient l'id de chaque user contenu dans matches. On fait donc un indexOf de l'id du current user pour trouver sa position dans le tableau matches...
             var elementPos = matches
-              .map(function(x) {
+              .map(function (x) {
                 return x._id.toString();
               })
               .indexOf(req.params.userId);
@@ -108,10 +108,10 @@ router.get("/matches/:userId", function(req, res) {
               matchUser.account = matches[i]["account"];
               //matchUser.username = matches[i]["account"]["username"];
               //matchUser.favorites = matches[i]["account"]["favorites"];
-              var arr1 = matchUser.account.favorites.map(function(x) {
+              var arr1 = matchUser.account.favorites.map(function (x) {
                 return x._id.toString();
               });
-              var arr2 = user.account.favorites.map(function(x) {
+              var arr2 = user.account.favorites.map(function (x) {
                 return x.toString();
               });
               var matchingMoviesIds = _.intersection(arr1, arr2);
@@ -131,7 +131,7 @@ router.get("/matches/:userId", function(req, res) {
   });
 });
 
-router.get("/buddyFinder/:movieId/for/:userId", function(req, res) {
+router.get("/buddyFinder/:movieId/for/:userId", function (req, res) {
   console.log(
     "finding buddy for movieid",
     req.params.movieId,
@@ -145,7 +145,7 @@ router.get("/buddyFinder/:movieId/for/:userId", function(req, res) {
     .populate("account.favorites", "originalTitle")
     .select("-token -email -__v")
     .in(query)
-    .exec(function(err, matches) {
+    .exec(function (err, matches) {
       if (err) {
         console.log("An error occurred" + err);
       } else {
@@ -153,7 +153,7 @@ router.get("/buddyFinder/:movieId/for/:userId", function(req, res) {
 
         // matches un tableau d'utilisateurs dont les favorites contiennent au moins un film en commun avec ceux du current user. Ce tableau contient aussi le current user, ainsi pour le sortir des résultats on fait un tableau temporaire qui s'appelle elementPos qui contient l'id de chaque user contenu dans matches. On fait donc un indexOf de l'id du current user pour trouver sa position dans le tableau matches...
         var elementPos = matches
-          .map(function(x) {
+          .map(function (x) {
             return x._id.toString();
           })
           .indexOf(req.params.userId);
@@ -177,7 +177,7 @@ router.get("/buddyFinder/:movieId/for/:userId", function(req, res) {
     });
 });
 
-router.get("/all", function(req, res, next) {
+router.get("/all", function (req, res, next) {
   console.log("req.query.userId", req.query.userId);
   var query = [req.query.userId];
   User.find({})
@@ -186,7 +186,7 @@ router.get("/all", function(req, res, next) {
     .where("_id")
     .nin(query)
     .exec()
-    .then(function(users) {
+    .then(function (users) {
       console.log("Route user/all");
       if (!users) {
         res.status(404);
@@ -196,28 +196,28 @@ router.get("/all", function(req, res, next) {
         usersInfo: users
       });
     })
-    .catch(function(err) {
+    .catch(function (err) {
       res.status(400);
       return next(err.message);
     });
 });
 
-router.post("/:userId/saveUserImage/", function(req, res, next) {
+router.post("/:userId/saveUserImage/", function (req, res, next) {
   console.log("coucou saveuserimage");
   console.log("req.body.imagePath", req.body.imagePath);
 
-  cloudinary.uploader.upload(req.body.imagePath, function(result) {
+  cloudinary.uploader.upload(req.body.imagePath, function (result) {
     console.log("result cloudinary", result);
     User.findOne(
       {
         _id: req.params.userId
       },
-      function(err, user) {
+      function (err, user) {
         if (err) {
           console.log(err);
         } else {
           (user.account.picture = result.secure_url), user.save(
-            function(err, obj) {
+            function (err, obj) {
               console.log("user.account.picture", user.account.picture);
               console.log("on a sauvé l'image pour cet user");
               res.send("Image updated for user");
@@ -229,42 +229,46 @@ router.post("/:userId/saveUserImage/", function(req, res, next) {
   });
 });
 
-// router.post("/:userId/saveUserImageBase64/", function(req, res, next) {
-//   cloudinary.uploader.upload(
-//     "data:image/gif;base64," + req.body.data,
-//     function(result) {
-//       console.log(result);
-//       User.findOne(
-//         {
-//           _id: req.params.userId
-//         },
-//         function(err, user) {
-//           if (err) {
-//             console.log(err);
-//           } else {
-//             (user.account.picture = result), user.save(function(err, obj) {
-//               res.send("Image updated for user");
-//             });
-//           }
-//         }
-//       );
-//     }
-//   );
-// });
+router.post("/:userId/saveUserImageBase64/", function (req, res, next) {
+  console.log(' body data', req.body.imageBase64.data.substr(0, 30))
+  cloudinary.uploader.upload(
+    req.body.imageBase64.data,
+    // "data:image/gif;base64," + req.body.data,
+    function (result) {
+      console.log(Object.keys(result));
+      User.findOne(
+        {
+          _id: req.params.userId
+        },
+        function (err, user) {
+          if (err) {
+            console.log(err);
+          } else {
+            user.account.picture = result.secure_url;
+            user.account.cId = result.public_id;
+            user.save(function (err, obj) {
+              res.send("Image updated for user");
+            });
+          }
+        }
+      );
+    }
+  );
+});
 
-router.post("/:userId/updateProfileInformation/", function(req, res, next) {
+router.post("/:userId/updateProfileInformation/", function (req, res, next) {
   console.log("on tape dans la route updateProfileInformation");
   console.log("req.body.userInfo.username", req.body.userInfo.username);
   User.findOne(
     {
       _id: req.params.userId
     },
-    function(err, user) {
+    function (err, user) {
       if (err) {
         console.log(err);
       } else {
         (user.account.username = req.body.userInfo.username), (user.account.age = req.body.userInfo.age), (user.account.genre = req.body.userInfo.genre), (user.account.description = req.body.userInfo.description), user.save(
-          function(err, obj) {
+          function (err, obj) {
             res.json(obj);
           }
         );
@@ -273,17 +277,17 @@ router.post("/:userId/updateProfileInformation/", function(req, res, next) {
   );
 });
 
-router.post("/:userId/updateLocation/", function(req, res, next) {
+router.post("/:userId/updateLocation/", function (req, res, next) {
   User.findOne(
     {
       _id: req.params.userId
     },
-    function(err, user) {
+    function (err, user) {
       if (err) {
         console.log(err);
       } else {
         (user.account.location.latitude = req.query.lat), (user.account.location.longitude = req.query.long), (user.account.location.timestamp = req.query.timestamp), user.save(
-          function(err, obj) {
+          function (err, obj) {
             res.send("Location updated for user");
           }
         );
@@ -292,12 +296,12 @@ router.post("/:userId/updateLocation/", function(req, res, next) {
   );
 });
 
-router.post("/:userId/toggleFavorite/:movieId", function(req, res, next) {
+router.post("/:userId/toggleFavorite/:movieId", function (req, res, next) {
   User.findOne(
     {
       _id: req.params.userId
     },
-    function(err, user) {
+    function (err, user) {
       if (err) {
         console.log(err);
       } else {
@@ -306,7 +310,7 @@ router.post("/:userId/toggleFavorite/:movieId", function(req, res, next) {
           {
             _id: req.params.movieId
           },
-          function(err, movie) {
+          function (err, movie) {
             // change to _id when going live
             if (err) {
               console.log(err);
@@ -328,7 +332,7 @@ router.post("/:userId/toggleFavorite/:movieId", function(req, res, next) {
                   1
                 );
               }
-              user.save(function(err, obj) {
+              user.save(function (err, obj) {
                 res.send("OK film ajouté/supprimé des favoris");
               });
             }
@@ -339,12 +343,12 @@ router.post("/:userId/toggleFavorite/:movieId", function(req, res, next) {
   );
 });
 
-router.post("/:userId/moviesSwiperLike/:movieId", function(req, res, next) {
+router.post("/:userId/moviesSwiperLike/:movieId", function (req, res, next) {
   User.findOne(
     {
       _id: req.params.userId
     },
-    function(err, user) {
+    function (err, user) {
       if (err) {
         console.log(err);
       } else {
@@ -353,7 +357,7 @@ router.post("/:userId/moviesSwiperLike/:movieId", function(req, res, next) {
           {
             _id: req.params.movieId
           },
-          function(err, movie) {
+          function (err, movie) {
             // change to _id when going live
             if (err) {
               console.log(err);
@@ -365,7 +369,7 @@ router.post("/:userId/moviesSwiperLike/:movieId", function(req, res, next) {
               } else {
                 console.log("le film existe déjà dans les Liked");
               }
-              user.save(function(err, obj) {
+              user.save(function (err, obj) {
                 res.send("OK film ajouté aux movieSwiperLiked");
               });
             }
@@ -376,12 +380,12 @@ router.post("/:userId/moviesSwiperLike/:movieId", function(req, res, next) {
   );
 });
 
-router.post("/:userId/moviesSwiperDislike/:movieId", function(req, res, next) {
+router.post("/:userId/moviesSwiperDislike/:movieId", function (req, res, next) {
   User.findOne(
     {
       _id: req.params.userId
     },
-    function(err, user) {
+    function (err, user) {
       if (err) {
         console.log(err);
       } else {
@@ -390,7 +394,7 @@ router.post("/:userId/moviesSwiperDislike/:movieId", function(req, res, next) {
           {
             _id: req.params.movieId
           },
-          function(err, movie) {
+          function (err, movie) {
             // change to _id when going live
             if (err) {
               console.log(err);
@@ -402,7 +406,7 @@ router.post("/:userId/moviesSwiperDislike/:movieId", function(req, res, next) {
               } else {
                 console.log("le film existe déjà dans les Disliked");
               }
-              user.save(function(err, obj) {
+              user.save(function (err, obj) {
                 res.send("OK film ajouté aux movieSwiperDisliked");
               });
             }
@@ -413,13 +417,13 @@ router.post("/:userId/moviesSwiperDislike/:movieId", function(req, res, next) {
   );
 });
 
-router.post("/:userId/sendBuddyRequest/:buddyId", function(req, res, next) {
+router.post("/:userId/sendBuddyRequest/:buddyId", function (req, res, next) {
   // on cherche le user connecté, celui qui a fait la demande d'ajout
   User.findOne(
     {
       _id: req.params.userId
     },
-    function(err, user) {
+    function (err, user) {
       if (err) {
         console.log(err);
       } else {
@@ -429,7 +433,7 @@ router.post("/:userId/sendBuddyRequest/:buddyId", function(req, res, next) {
           {
             _id: req.params.buddyId
           },
-          function(err, buddy) {
+          function (err, buddy) {
             if (err) {
               console.log(err);
             } else {
@@ -444,8 +448,8 @@ router.post("/:userId/sendBuddyRequest/:buddyId", function(req, res, next) {
               var buddyRequesting = {};
               buddyRequesting._id = user._id;
               buddy.account.buddiesRequestsReceived.push(buddyRequesting);
-              buddy.save(function(err, obj) {});
-              user.save(function(err, obj) {
+              buddy.save(function (err, obj) { });
+              user.save(function (err, obj) {
                 res.send("OK la buddy request a été envoyée");
               });
             }
@@ -459,13 +463,13 @@ router.post("/:userId/sendBuddyRequest/:buddyId", function(req, res, next) {
 // KIKIE DEMANDE A SIMON
 //http://localhost:3002/api/user/58f12224fb71ce5b95d8eb3b/sendBuddyRequest/58f12224fb71ce5b95d8eb3a
 
-router.post("/:userId/sendBuddyRequest/:buddyId", function(req, res, next) {
+router.post("/:userId/sendBuddyRequest/:buddyId", function (req, res, next) {
   // on cherche le user connecté, celui qui a fait la demande d'ajout
   User.findOne(
     {
       _id: req.params.userId
     },
-    function(err, user) {
+    function (err, user) {
       if (err) {
         console.log(err);
       } else {
@@ -475,7 +479,7 @@ router.post("/:userId/sendBuddyRequest/:buddyId", function(req, res, next) {
           {
             _id: req.params.buddyId
           },
-          function(err, buddy) {
+          function (err, buddy) {
             if (err) {
               console.log(err);
             } else {
@@ -490,8 +494,8 @@ router.post("/:userId/sendBuddyRequest/:buddyId", function(req, res, next) {
               var buddyRequesting = {};
               buddyRequesting._id = user._id;
               buddy.account.buddiesRequestsReceived.push(buddyRequesting);
-              buddy.save(function(err, obj) {});
-              user.save(function(err, obj) {
+              buddy.save(function (err, obj) { });
+              user.save(function (err, obj) {
                 res.send("OK la buddy request a été envoyée");
               });
             }
@@ -505,13 +509,13 @@ router.post("/:userId/sendBuddyRequest/:buddyId", function(req, res, next) {
 // SIMON ACCEPTE KIKIE
 //http://localhost:3002/api/user/58f12224fb71ce5b95d8eb3a/acceptBuddyRequest/58f12224fb71ce5b95d8eb3b
 
-router.post("/:userId/acceptBuddyRequest/:buddyId", function(req, res, next) {
+router.post("/:userId/acceptBuddyRequest/:buddyId", function (req, res, next) {
   // on cherche le user connecté, celui qui veut accepter la demande
   User.findOne(
     {
       _id: req.params.userId
     },
-    function(err, user) {
+    function (err, user) {
       if (err) {
         console.log(err);
       } else {
@@ -535,13 +539,13 @@ router.post("/:userId/acceptBuddyRequest/:buddyId", function(req, res, next) {
           {
             _id: req.params.buddyId
           },
-          function(err, buddy) {
+          function (err, buddy) {
             // dans le compte du demandeur, on change le statut du demandé de requested à accepted.
             if (err) {
               console.log(err);
             } else {
               var elementPos = buddy.account.buddiesRequestsSent
-                .map(function(x) {
+                .map(function (x) {
                   return x._id.toString();
                 })
                 .indexOf(req.params.userId);
@@ -568,8 +572,8 @@ router.post("/:userId/acceptBuddyRequest/:buddyId", function(req, res, next) {
               acceptingBuddy.addedAt = new Date();
               // on pousse l'accepting buddy dans la liste des amis du user qui a fait la demande
               buddy.account.buddies.push(acceptingBuddy);
-              buddy.save(function(err, obj) {});
-              user.save(function(err, obj) {
+              buddy.save(function (err, obj) { });
+              user.save(function (err, obj) {
                 res.send("OK la buddy request a été acceptée");
               });
             }
@@ -580,13 +584,13 @@ router.post("/:userId/acceptBuddyRequest/:buddyId", function(req, res, next) {
   );
 });
 
-router.post("/:userId/cancelBuddyRequest/:buddyId", function(req, res, next) {
+router.post("/:userId/cancelBuddyRequest/:buddyId", function (req, res, next) {
   // on cherche le user connecté, celui qui veut annuler sa demande
   User.findOne(
     {
       _id: req.params.userId
     },
-    function(err, user) {
+    function (err, user) {
       if (err) {
         console.log(err);
       } else {
@@ -606,13 +610,13 @@ router.post("/:userId/cancelBuddyRequest/:buddyId", function(req, res, next) {
           {
             _id: req.params.buddyId
           },
-          function(err, buddy) {
+          function (err, buddy) {
             // on trouve le buddy pour lequel le user annule sa demande d'amis
             if (err) {
               console.log(err);
             } else {
               var elementPos = buddy.account.buddiesRequestsReceived
-                .map(function(x) {
+                .map(function (x) {
                   return x._id.toString();
                 })
                 .indexOf(req.params.userId);
@@ -622,8 +626,8 @@ router.post("/:userId/cancelBuddyRequest/:buddyId", function(req, res, next) {
               console.log("req.params.userId", req.params.userId);
               console.log("elementPos", elementPos);
               console.log("buddy.account.buddies", buddy.account.buddies);
-              buddy.save(function(err, obj) {});
-              user.save(function(err, obj) {
+              buddy.save(function (err, obj) { });
+              user.save(function (err, obj) {
                 res.send("OK la buddy request a été annulée");
               });
             }
@@ -634,13 +638,13 @@ router.post("/:userId/cancelBuddyRequest/:buddyId", function(req, res, next) {
   );
 });
 
-router.post("/:userId/refuseBuddyRequest/:buddyId", function(req, res, next) {
+router.post("/:userId/refuseBuddyRequest/:buddyId", function (req, res, next) {
   // on cherche le user connecté, celui qui veut refuser la demande
   User.findOne(
     {
       _id: req.params.userId
     },
-    function(err, user) {
+    function (err, user) {
       if (err) {
         console.log(err);
       } else {
@@ -664,13 +668,13 @@ router.post("/:userId/refuseBuddyRequest/:buddyId", function(req, res, next) {
           {
             _id: req.params.buddyId
           },
-          function(err, buddy) {
+          function (err, buddy) {
             // dans le compte du demandeur, on change le statut du demandé de requested à accepted.
             if (err) {
               console.log(err);
             } else {
               var elementPos = buddy.account.buddiesRequestsSent
-                .map(function(x) {
+                .map(function (x) {
                   return x._id.toString();
                 })
                 .indexOf(req.params.userId);
@@ -680,8 +684,8 @@ router.post("/:userId/refuseBuddyRequest/:buddyId", function(req, res, next) {
               console.log("req.params.userId", req.params.userId);
               console.log("elementPos", elementPos);
               console.log("buddy.account.buddies", buddy.account.buddies);
-              buddy.save(function(err, obj) {});
-              user.save(function(err, obj) {
+              buddy.save(function (err, obj) { });
+              user.save(function (err, obj) {
                 res.send("OK la buddy request a été refusée");
               });
             }
@@ -692,13 +696,13 @@ router.post("/:userId/refuseBuddyRequest/:buddyId", function(req, res, next) {
   );
 });
 
-router.post("/:userId/removeBuddy/:buddyId", function(req, res, next) {
+router.post("/:userId/removeBuddy/:buddyId", function (req, res, next) {
   // on cherche le user connecté, celui qui retirer le buddy de ses amis
   User.findOne(
     {
       _id: req.params.userId
     },
-    function(err, user) {
+    function (err, user) {
       if (err) {
         console.log(err);
       } else {
@@ -720,13 +724,13 @@ router.post("/:userId/removeBuddy/:buddyId", function(req, res, next) {
           {
             _id: req.params.buddyId
           },
-          function(err, buddy) {
+          function (err, buddy) {
             // dans le compte du buddy supprimé on retire le suppresseur de la liste d'amis
             if (err) {
               console.log(err);
             } else {
               var elementPos = buddy.account.buddies
-                .map(function(x) {
+                .map(function (x) {
                   return x._id.toString();
                 })
                 .indexOf(req.params.userId);
@@ -736,8 +740,8 @@ router.post("/:userId/removeBuddy/:buddyId", function(req, res, next) {
               console.log("req.params.userId", req.params.userId);
               console.log("elementPos", elementPos);
               console.log("buddy.account.buddies", buddy.account.buddies);
-              buddy.save(function(err, obj) {});
-              user.save(function(err, obj) {
+              buddy.save(function (err, obj) { });
+              user.save(function (err, obj) {
                 res.send("OK le buddy a été supprimé :(");
               });
             }

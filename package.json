@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "local": "concurrently nodemon server.js",
+    "local": "nodemon server.js",
     "dev": "nodemon server.js",
     "chat": "nodemon serverMessages.js",
     "importData": "node data/importAllocineNowShowingMovies.js  && node data/importAllocineComingSoonMovies.js && node data/importUsers.js",

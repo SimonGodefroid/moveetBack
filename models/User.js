@@ -105,7 +105,8 @@ var UserSchema = new mongoose.Schema({
       }
     ],
     moviesSwiperDeck: Array
-  }
+  },
+  cId: String
 });
 
 UserSchema.plugin(passportLocalMongoose, {
@@ -114,10 +115,10 @@ UserSchema.plugin(passportLocalMongoose, {
 });
 
 // Cette méthode sera utilisée par la strategie `passport-local` pour trouver un utilisateur en fonction de son `email` et `password`
-UserSchema.statics.authenticateLocal = function() {
+UserSchema.statics.authenticateLocal = function () {
   var _self = this;
-  return function(req, email, password, cb) {
-    _self.findByUsername(email, true, function(err, user) {
+  return function (req, email, password, cb) {
+    _self.findByUsername(email, true, function (err, user) {
       if (err) return cb(err);
       if (user) {
         return user.authenticate(password, cb);
@@ -129,9 +130,9 @@ UserSchema.statics.authenticateLocal = function() {
 };
 
 // Cette méthode sera utilisée par la strategie `passport-http-bearer` pour trouver un utilisateur en fonction de son `token`
-UserSchema.statics.authenticateBearer = function() {
+UserSchema.statics.authenticateBearer = function () {
   var _self = this;
-  return function(token, cb) {
+  return function (token, cb) {
     if (!token) {
       cb(null, false);
     } else {
@@ -139,7 +140,7 @@ UserSchema.statics.authenticateBearer = function() {
         {
           token: token
         },
-        function(err, user) {
+        function (err, user) {
           if (err) return cb(err);
           if (!user) return cb(null, false);
           return cb(null, user);
