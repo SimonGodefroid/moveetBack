@@ -4,10 +4,10 @@ require("dotenv").config();
 var cloudinary = require("cloudinary");
 var User = require("../models/User.js");
 var AllocineMovie = require("../models/AllocineMovie.js");
-// var _Movie = require("../models/_Movie.js");
 var request = require("request");
 var _ = require("lodash");
 // http://localhost:3002/api/user/58ef71e29c963afa6e9c974b/favorites
+
 router.get("/:userId/favorites", function (req, res, next) {
   User.findById(req.params.userId)
     .populate("account.favorites")
@@ -28,6 +28,41 @@ router.get("/:userId/favorites", function (req, res, next) {
       return next(err.message);
     });
 });
+
+
+router.get("/:userId/filteredFavorites", function (req, res, next) {
+  User.findById(req.params.userId)
+    .populate({
+      path: 'account.favorites',
+      select: 'favorites',
+      options: {
+        skip: parseInt(req.query.skip),
+        limit: parseInt(req.query.limit),
+        sort: '-1',
+      }
+    })
+    .sort({
+      "release.releaseDate": "ascending"
+    })
+    .exec()
+    .then(function (user) {
+      console.log('req.query.skip', parseInt(req.query.skip))
+      if (!user) {
+        res.status(404);
+        return next("User not found");
+      }
+      return res.json(user.account.favorites);
+    })
+    .catch(function (err) {
+      res.status(400);
+      return next(err.message);
+    });
+});
+
+
+
+
+
 
 router.get("/show/:userId", function (req, res, next) {
   User.findById(req.params.userId)
